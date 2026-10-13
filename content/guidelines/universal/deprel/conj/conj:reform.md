@@ -13,7 +13,7 @@ The `conj:reform` relation is specific to spoken language and it is used to link
 Whereas the relation [`conj:coord`](./conj:coord.md) links two different objects, two referents (ex: *Mary and John* are two different referents).
 The relation `conj:reform`, on the other hand, is used to link two denotations of the same referent (ex: *the desert in Kenya, the Kenya desert* is denoting the same referent).
 
-The first element is a complete phrase containing at least one content word. The second element is a reformulation of the first one : it generally makes more precise the meaning of the first element by the choice of a more specific term or by giving more details. 
+The first element contains at least one content word. The second element is a reformulation of the first one : it generally makes more precise the meaning of the first element by the choice of a more specific term or by giving more details. 
 
 Reformulation is distinguished on one side from repairs (encoded in the reverse direction by [`reparandum`](guidelines/universal/deprel/reparandum)), where the first element is incomplete or do not contain content words, and on the other side, from apposition ([`conj:appos`](./conj:appos)), when the second element is a new denotation taking another point of view and not a pure reformulation.
 
