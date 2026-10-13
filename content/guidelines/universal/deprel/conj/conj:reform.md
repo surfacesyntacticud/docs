@@ -15,7 +15,7 @@ The relation `conj:reform`, on the other hand, is used to link two denotations o
 
 The first element contains at least one content word. The second element is a reformulation of the first one : it generally makes more precise the meaning of the first element by the choice of a more specific term or by giving more details. 
 
-Reformulation is distinguished on one side from repairs (encoded in the reverse direction by [`reparandum`](guidelines/universal/deprel/reparandum)), where the first element is incomplete or do not contain content words, and on the other side, from apposition ([`conj:appos`](./conj:appos)), when the second element is a new denotation taking another point of view and not a pure reformulation.
+Reformulation is distinguished on one side from repairs (encoded in the reverse direction by [`reparandum`](guidelines/universal/deprel/reparandum)), where the first element does not contain content words or all its content words are repeated (except for rebuttal, see below), and on the other side, from apposition ([`conj:appos`](./conj:appos)), when the second element is a new denotation taking another point of view and not a pure reformulation.
 
 <conll>
 # lang = French
