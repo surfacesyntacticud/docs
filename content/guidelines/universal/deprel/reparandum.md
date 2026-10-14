@@ -33,7 +33,7 @@ It is similar to the [`reparandum` UD relation](https://universaldependencies.or
 10	.	.	PUNCT	_	_	_	_	_	_
 </conll>
 
-2) the reparandum contains content words, but all the content words are repeated in the repair. Note: We exclude some repetitions, such as rebuttal or confirmation, which are analyzed with [`conj:reform`](https://pebbles.surfacesyntacticud.org/guidelines/universal/deprel/conj/conj:reform). 
+2) the reparandum contains content words, but all the content words are repeated in the repair. Note: We exclude some repetitions, such as rebuttal or confirmation, which are analyzed with [`conj:reform`](https://pebbles.surfacesyntacticud.org/guidelines/universal/deprel/conj/conj:reform). It can also be a repetition of intensification, which is analyzed with [`conj:coord`](https://pebbles.surfacesyntacticud.org/guidelines/universal/deprel/conj/conj:coord).
 
 <conll>
 # lang = French
