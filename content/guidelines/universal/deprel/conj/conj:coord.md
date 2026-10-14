@@ -74,4 +74,39 @@ It is analogous to [`conj`](https://universaldependencies.org/u/dep/conj.html) r
 
 The relation can be used with the deep extension [`emb`](guidelines/deep_features/emb), see [coordination construction page](../../Universal_construction/coordination.md#embedded-coordination).
 
+`conj:coord`in the case of repetition of intensification as in the following example:
+
+<conll>
+# lang = French
+# timestamp = 1792000125803
+# sent_id = ParisStories_2022_7_chienGourmand__69
+# text = mais dès qu'il sent de la bouffe, et bah, tout de suite, il accourt, il accourt, il accourt.
+# text_en = but as soon as he smells food, well, right away, he runs, runs, runs.
+1	mais	mais	CCONJ	_	_	18	cc	_	WordAlignmentBegin=147891|WordAlignmentEnd=148004
+2	dès	dès	ADP	_	_	18	mod	_	WordAlignmentBegin=148004|WordAlignmentEnd=148117
+3	qu'	que	SCONJ	_	_	2	comp	_	SpaceAfter=No|WordAlignmentBegin=148117|WordAlignmentEnd=148230
+4	il	lui	PRON	_	Case=Nom|Emph=No|Gender=Masc|Number=Sing|PronType=Prs	5	subj	_	Person[lex]=3|WordAlignmentBegin=148230|WordAlignmentEnd=148344
+5	sent	sentir	VERB	_	Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	3	comp	_	Person[ctxt]=3|WordAlignmentBegin=148344|WordAlignmentEnd=148457
+6	de	de	ADP	_	ExtPos=DET	8	det	_	Idiom=Yes|WordAlignmentBegin=148457|WordAlignmentEnd=148570
+7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	unk	_	HasSpokenGender=OnlySingExceptWithLiaison|InIdiom=Yes|WordAlignmentBegin=148570|WordAlignmentEnd=148683
+8	bouffe	bouffe	NOUN	_	_	5	comp:obj	_	Gender[lex]=Fem|Number[ctxt]=Sing|SpaceAfter=No|WordAlignmentBegin=148683|WordAlignmentEnd=148796
+9	,	,	PUNCT	_	_	3	punct	_	WordAlignmentBegin=148796|WordAlignmentEnd=148796
+10	et	et	CCONJ	_	_	2	cc	_	WordAlignmentBegin=149304|WordAlignmentEnd=149445
+11	bah	bah	INTJ	_	_	2	discourse	_	SpaceAfter=No|WordAlignmentBegin=149445|WordAlignmentEnd=149586
+12	,	,	PUNCT	_	_	2	punct	_	WordAlignmentBegin=149586|WordAlignmentEnd=149586
+13	tout	tout	ADV	_	_	14	mod	_	WordAlignmentBegin=149586|WordAlignmentEnd=149728
+14	de	de	ADP	_	_	18	mod	_	WordAlignmentBegin=149728|WordAlignmentEnd=149869
+15	suite	suite	NOUN	_	_	14	comp	_	Gender[lex]=Fem|Number[ctxt]=Sing|SpaceAfter=No|WordAlignmentBegin=149869|WordAlignmentEnd=150010
+16	,	,	PUNCT	_	_	14	punct	_	WordAlignmentBegin=150010|WordAlignmentEnd=150010
+17	il	lui	PRON	_	Case=Nom|Emph=No|Gender=Masc|Number=Sing|PronType=Prs	18	subj	_	Person[lex]=3|WordAlignmentBegin=150010|WordAlignmentEnd=150200
+18	accourt	accourir	VERB	_	Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	0	root	_	Person[ctxt]=3|SpaceAfter=No|WordAlignmentBegin=150200|WordAlignmentEnd=150390
+19	,	,	PUNCT	_	_	18	punct	_	WordAlignmentBegin=150390|WordAlignmentEnd=150390
+20	il	lui	PRON	_	Case=Nom|Emph=No|Gender=Masc|Number=Sing|PronType=Prs	21	subj	_	Person[lex]=3|WordAlignmentBegin=150390|WordAlignmentEnd=150581
+21	accourt	accourir	VERB	_	Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	18	conj:coord	_	Person[ctxt]=3|SpaceAfter=No|WordAlignmentBegin=150581|WordAlignmentEnd=150771
+22	,	,	PUNCT	_	_	21	punct	_	WordAlignmentBegin=150771|WordAlignmentEnd=150771
+23	il	lui	PRON	_	Case=Nom|Emph=No|Gender=Masc|Number=Sing|PronType=Prs	24	subj	_	Person[lex]=3|WordAlignmentBegin=150771|WordAlignmentEnd=150961
+24	accourt	accourir	VERB	_	Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	21	conj:coord	_	Person[ctxt]=3|SpaceAfter=No|WordAlignmentBegin=150961|WordAlignmentEnd=151151
+25	.	.	PUNCT	_	_	18	punct	_	WordAlignmentBegin=151151|WordAlignmentEnd=151151 
+</conll>
+
 
