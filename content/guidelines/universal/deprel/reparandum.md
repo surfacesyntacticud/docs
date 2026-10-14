@@ -33,7 +33,7 @@ It is similar to the [`reparandum` UD relation](https://universaldependencies.or
 10	.	.	PUNCT	_	_	_	_	_	_
 </conll>
 
-2) the reparandum contains content words, but it is an incomplete unit and all the content words are repeated in the repair.
+2) the reparandum contains content words, but all the content words are repeated in the repair. Note: We exclude some repetitions, such as rebuttal or confirmation, which are analyzed with [`conj:reform`](https://pebbles.surfacesyntacticud.org/guidelines/universal/deprel/conj/conj:reform). 
 
 <conll>
 # lang = French
@@ -77,7 +77,40 @@ It is similar to the [`reparandum` UD relation](https://universaldependencies.or
 
 Note that the reparandum has been attached to its repair in the previous example, even if the result is non projective.
 
-The reparandum must be a unit. In the following example, _d'autres_ is repeated. It is then a reparandum. As the unit is incomplete, the head noun is missing, the ajective _autres_ is promoted  (`Promotion=mod`) and the determiner _d'_ is attached to the position occupied by _autres_ (`Head=Position`)
+<conll>
+# lang = French
+# sent_id = ParisStories_2021_couruLaVoir_18
+# text = euh, ouais, enfin je, on, c'était XXX, ça faisait un peu comme dans les films, à vrai dire.
+# text_en =  uh, yeah, well I, we, it was XXX, it was kind of like in the movies, to tell the truth..
+1	euh	euh	INTJ	_	_	3	discourse:filler	_	SpaceAfter=No
+2	,	,	PUNCT	_	_	1	punct	_	_
+3	ouais	ouais	INTJ	_	_	15	discourse	_	SpaceAfter=No
+4	,	,	PUNCT	_	_	3	punct	_	_
+5	enfin	enfin	ADV	_	ExtPos=INTJ	15	discourse	_	_
+6	je	moi	PRON	_	Case=Nom|Emph=No|PronType=Prs	8	reparandum	_	Number[lex]=Sing|Person[lex]=1|SpaceAfter=No
+7	,	,	PUNCT	_	_	6	punct	_	_
+8	on	on	PRON	_	PronType=Ind	10	reparandum	_	Gender[ctxt]=Masc|Number[lex]=Sing|Person[lex]=3|SpaceAfter=No
+9	,	,	PUNCT	_	_	8	punct	_	_
+10	c'	ce	PRON	_	PronType=Dem	11	subj	_	Gender[lex]=Masc|Number[lex]=Sing|Person[lex]=3|SpaceAfter=No
+11	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	15	reparandum	_	_
+12	XXX	XXX	X	_	_	11	unk	_	Scrap=Yes|SpaceAfter=No
+13	,	,	PUNCT	_	_	11	punct	_	_
+14	ça	ça	PRON	_	PronType=Dem	15	subj	_	Gender[lex]=Masc|Number[lex]=Sing|Person[lex]=3
+15	faisait	faire	VERB	_	Mood=Ind|Tense=Imp|VerbForm=Fin	0	root	_	Number[ctxt]=Sing|Person[ctxt]=3
+16	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	17	det	_	_
+17	peu	peu	NOUN	_	_	18	mod	_	Gender[lex]=Masc|Number[ctxt]=Sing
+18	comme	comme	SCONJ	_	_	15	mod	_	_
+19	dans	dans	ADP	_	_	18	comp	_	_
+20	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	21	det	_	HasSpokenGender=OnlySingExceptWithLiaison
+21	films	film	NOUN	_	_	19	comp	_	Gender[lex]=Masc|Number[ctxt]=Plur|SpaceAfter=No
+22	,	,	PUNCT	_	_	23	punct	_	_
+23	à	à	ADP	_	_	15	discourse	_	_
+24	vrai	vrai	ADJ	_	_	25	mod	_	Gender[ctxt]=Masc|HasSpokenGender=NotInThisDialect|HasSpokenNumber=OnlyWithLiaison|Number[ctxt]=Sing
+25	dire	dire	VERB	_	VerbForm=Inf	23	comp	_	SpaceAfter=No|Subject=SubjRaising
+26	.	.	PUNCT	_	_	15	punct	_	_
+</conll>
+
+The reparandum forms a unit, even if it is incomplete. In the following example, _d'autres_ (`DET ADJ`) is repeated. It is then a reparandum. As the unit is incomplete and the head noun is missing, the adjective _autres_ is promoted  (`Promotion=mod`) and the determiner _d'_ is attached to the position occupied by _autres_ (`Head=Position`)
 
 <conll>
 # lang = French
