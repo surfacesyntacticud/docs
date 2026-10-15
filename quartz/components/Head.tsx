@@ -1,9 +1,9 @@
 import { i18n } from "../i18n"
-import { FullSlug, getFileExtension, joinSegments, pathToRoot } from "../util/path"
-import { CSSResourceToStyleElement, JSResourceToScriptElement } from "../util/resources"
-import { googleFontHref, googleFontSubsetHref } from "../util/theme"
-import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
-import { unescapeHTML } from "../util/escape"
+import { FullSlug, getFileExtension, joinSegments, pathToRoot } from "../util/path.js"
+import { CSSResourceToStyleElement, JSResourceToScriptElement } from "../util/resources.js"
+import { googleFontHref, googleFontSubsetHref } from "../util/theme.js"
+import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types.js"
+import { unescapeHTML } from "../util/escape.js"
 
 export default (() => {
   const Head: QuartzComponent = ({

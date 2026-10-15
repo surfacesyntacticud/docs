@@ -1,5 +1,5 @@
-import { componentRegistry } from "./registry"
-import { QuartzComponent, QuartzComponentConstructor } from "./types"
+import { componentRegistry } from "./registry.js"
+import { QuartzComponent, QuartzComponentConstructor } from "./types.js"
 
 export function External<Options extends object | undefined>(
   name: string,

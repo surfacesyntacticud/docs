@@ -1,5 +1,5 @@
 import { ValidLocale } from "../i18n"
-import { QuartzPluginData } from "../plugins/vfile"
+import { QuartzPluginData } from "../plugins/vfile.js"
 
 interface Props {
   date: Date

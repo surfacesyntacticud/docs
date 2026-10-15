@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "plugins": {
+    "PageEdit": {
+      "source": "./external-plugins",
+      "resolved": "/Users/ramyamrani/pebbles/external-plugins",
+      "commit": "local",
+      "installedAt": "2026-10-15T12:27:25.043Z"
+    },
+    "Status": {
+      "source": "./external-plugins",
+      "resolved": "/Users/ramyamrani/pebbles/external-plugins",
+      "commit": "local",
+      "installedAt": "2026-10-15T12:27:25.520Z"
+    },
+    "external-plugins": {
+      "source": "./external-plugins",
+      "resolved": "/Users/ramyamrani/pebbles/external-plugins",
+      "commit": "local",
+      "installedAt": "2026-10-15T12:22:30.325Z"
+    }
+  }
+}

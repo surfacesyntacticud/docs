@@ -1,7 +1,7 @@
-import { FullSlug, isFolderPath, resolveRelative } from "../util/path"
-import { QuartzPluginData } from "../plugins/vfile"
-import { Date, getDate } from "./Date"
-import { QuartzComponent, QuartzComponentProps } from "./types"
+import { FullSlug, isFolderPath, resolveRelative } from "../util/path.js"
+import { QuartzPluginData } from "../plugins/vfile.js"
+import { Date, getDate } from "./Date.js"
+import { QuartzComponent, QuartzComponentProps } from "./types.js"
 
 export type SortFn = (f1: QuartzPluginData, f2: QuartzPluginData) => number
 
