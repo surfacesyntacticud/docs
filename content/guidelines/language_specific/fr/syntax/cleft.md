@@ -46,7 +46,7 @@ In the other cases, the cleft clause is analysed as a complement clause, with _q
 1	C'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	2	subj@expl	_	SpaceAfter=No
 2	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	d'	de	ADP	_	ExtPos=ADV	2	mod	_	Idiom=Yes|SpaceAfter=No
-4	ailleurs	ailleurs	ADV	_	_	3	comp:obj	_	InIdiom=Yes
+4	ailleurs	ailleurs	ADV	_	_	3	comp	_	InIdiom=Yes
 5	à	à	ADP	_	_	2	comp:pred	_	_
 6	ce	ce	DET	_	Gender=Masc|Number=Sing|PronType=Dem	7	det	_	_
 7	style	style	NOUN	_	Gender=Masc|Number=Sing	5	comp:obj	_	_
