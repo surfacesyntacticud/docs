@@ -13,6 +13,18 @@
       "commit": "local",
       "installedAt": "2026-10-15T12:27:25.520Z"
     },
+    "Request": {
+      "source": "./external-plugins",
+      "resolved": "/Users/ramyamrani/pebbles/external-plugins",
+      "commit": "local",
+      "installedAt": "2026-10-15T12:27:26.000Z"
+    },
+    "SudLogo": {
+      "source": "./external-plugins",
+      "resolved": "/Users/ramyamrani/pebbles/external-plugins",
+      "commit": "local",
+      "installedAt": "2026-10-15T12:27:26.500Z"
+    },
     "external-plugins": {
       "source": "./external-plugins",
       "resolved": "/Users/ramyamrani/pebbles/external-plugins",

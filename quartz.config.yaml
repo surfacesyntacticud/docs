@@ -2,7 +2,7 @@
 configuration:
   pageTitle: SUD Documentation
   pageTitleSuffix: ""
-  enableSPA: true
+  enableSPA: false
   enablePopovers: true
   analytics:
     provider: plausible
@@ -279,6 +279,24 @@ plugins:
     layout:
       position: beforeBody
       priority: 18
+  - source:
+      repo: ./external-plugins
+      name: Request
+    enabled: true
+    options: {}
+    order: 50
+    layout:
+      position: beforeBody
+      priority: 20
+  - source:
+      repo: ./external-plugins
+      name: SudLogo
+    enabled: true
+    options: {}
+    order: 50
+    layout:
+      position: left
+      priority: 5
 layout:
   groups:
     toolbar:

@@ -61,6 +61,18 @@
         "displayName": "Status",
         "description": "Shows the page status badge from frontmatter",
         "version": "1.0.0"
+      },
+      "Request": {
+        "name": "Request",
+        "displayName": "Request",
+        "description": "Shows a request link for the current page",
+        "version": "1.0.0"
+      },
+      "SudLogo": {
+        "name": "SudLogo",
+        "displayName": "SUD Logo",
+        "description": "Displays the SUD logo with a link to the documentation",
+        "version": "1.0.0"
       }
     },
     "requiredPlugins": [],
