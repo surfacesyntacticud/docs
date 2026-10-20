@@ -29,30 +29,29 @@ export const Conll: QuartzTransformerPlugin = () => {
                 .join("")
                 .trim();
 
-              // Read highlight_arc / highlight_arcs as dependent token IDs.
-              const highlightTokens = new Set<string>();
+              const highlightDeps = new Set<string>();
 
-              const content = rawContent
+              const content =
+              rawContent
                 .split(/\r?\n/)
-                .filter((line) => {
-                  const match = line.match(
-                    /^#\s*highlight_arcs?\s*=\s*(.+)$/i,
-                  );
-
-                  if (!match) return true;
-
-                  for (const token of (match[1] ?? "").split(",")) {
-                    const id = token.trim();
-
-                    if (/^\d+$/.test(id)) {
-                      highlightTokens.add(id);
+                .map((line) => {
+                  const cols = line.split("\t")
+                  if (cols.length === 10) {
+                    const misc = cols[9] || "_"
+                    const match = misc.match (/highlight_dep=([A-Za-z]+)/i)
+                    if (match) {
+                      highlightDeps.add (`${cols[0]}:${match[1]}`)
+                      let newMisc = misc
+                        .replace(/highlight_dep=([A-Za-z]+)/i, "")
+                        .replace(/^\|+|\|+$/g, "")  // Remove leading/trailing pipes
+                        .replace(/\|\|/, "|")
+                      newMisc = newMisc || "_";
+                      return (cols.slice(0,-1).concat(newMisc).join("\t"))
                     }
                   }
+                  return line;
+                }).join("\n");
 
-                  return false;
-                })
-                .join("\n")
-                .trim();
 
               node.tagName = "div";
               node.properties = {
@@ -67,11 +66,11 @@ export const Conll: QuartzTransformerPlugin = () => {
                     "shown-metas":
                       "lang,text_fr,text_en,pinyin,sent_id,schema",
                     "hidden-features":
-                      "MISC.highlight,MISC.SpaceAfter,XPOS,MISC.AlignBegin,MISC.AlignEnd,MISC.wordform,MISC.Cxn,MISC.CxnElt",
+                      "MISC.SpaceAfter,XPOS,MISC.AlignBegin,MISC.AlignEnd,MISC.wordform,MISC.Cxn,MISC.CxnElt",
                     interactive: true,
                     "token-spacing": "20",
                     conll: content,
-                    "data-highlight-tokens": [...highlightTokens].join(","),
+                    "highlight-deps": [...highlightDeps].join(","),
                   },
                   children: [],
                 },

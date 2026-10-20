@@ -24,29 +24,18 @@
 
       return;
     }
-
-    const requested = new Set(
-      (tree.getAttribute("data-highlight-tokens") || "")
-        .split(",")
-        .map((id) => id.trim())
-        .filter(Boolean),
-    );
-
+    
+    const colored_arcs = {};
+    const highlight_arcs = tree.getAttribute("highlight-deps")
+    if (highlight_arcs) {
+      const pairs = highlight_arcs.split(',');
+      pairs.forEach(pair => {
+        const [key, color] = pair.split(':');
+        colored_arcs[parseInt(key)] = color;
+      });
+    }
     const curves = svg.querySelectorAll("path.curve");
     const arrows = svg.querySelectorAll("path.arrowhead");
-
-    // Remove highlighting left by a previous render.
-    curves.forEach((curve) => {
-      curve.style.removeProperty("stroke");
-      curve.style.removeProperty("stroke-width");
-    });
-
-    arrows.forEach((arrow) => {
-      arrow.style.removeProperty("fill");
-      arrow.style.removeProperty("stroke");
-    });
-
-    if (requested.size === 0) return;
 
     const conll = tree.getAttribute("conll") || "";
     const dependencies = [];
@@ -66,25 +55,21 @@
     }
 
     dependencies.forEach(({ dependent, head }, tokenIndex) => {
-      if (!requested.has(dependent)) return;
+      if (!(dependent in colored_arcs)) return;
+      const color = colored_arcs[dependent];
 
       // Curves follow token order, including root arcs.
       const curve = curves[tokenIndex];
       const arrow = arrows[tokenIndex];
 
-      console.log(
-        "Arc sélectionné :",
-        head === "0" ? "racine -> " + dependent : head + " -> " + dependent,
-      );
-
       if (curve) {
-        curve.style.setProperty("stroke", "red", "important");
-        curve.style.setProperty("stroke-width", "2.5", "important");
+        curve.style.setProperty("stroke", color);
+        curve.style.setProperty("stroke-width", "2");
       }
 
       if (arrow) {
-        arrow.style.setProperty("fill", "red", "important");
-        arrow.style.setProperty("stroke", "red", "important");
+        arrow.style.setProperty("fill", color);
+        arrow.style.setProperty("stroke", color);
       }
     });
   }
