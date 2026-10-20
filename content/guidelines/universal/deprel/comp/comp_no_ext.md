@@ -1,5 +1,5 @@
 ---
-title: comp
+title: comp (whitout extension)
 request: pattern { X -[comp]-> Y }
 scope:
   schema: SUD
