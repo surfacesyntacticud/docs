@@ -13,10 +13,11 @@ The deprel `conj:reform` is used for dependency relation in which the elements a
 
 <conll>
 # sent_id = crdo-fsl-cuc022__8
-# source_file = ./CUC022_low.mp4
-# text_fr = Il heurte la barrière et tombe. Il a mal, à la jambe. L'oiseau, voyant la chute, s'envole chercher
 # text = [OISEAU] [s'envoler] [VOLER]
-1	[OISEAU]	_	NOUN	_	_	2	subj	_	AlignBegin=51995|AlignEnd=52755|Gloss=[BIRD]
-2	[s'envoler]	_	VERB	_	_	0	root	_	AlignBegin=52755|AlignEnd=53555|Gloss=[fly-away]|Prb-real=deux-ailes|Subj=prb:oiseau
-3	[VOLER]	_	VERB	_	_	2	conj:reform	_	AlignBegin=53555|AlignEnd=54155|Gloss=[FLY]|Subj=prm:oiseau|Tgt=PSSXr
+# video_url = https://cocoon.huma-num.fr/data/cuxac/CUC022_low.mp4
+# text_fr = L'oiseau, voyant la chute, s'envole
+# text_en = The bird, seeing the fall, flies away
+1	[OISEAU]	[OISEAU]	NOUN	_	_	2	nsubj	_	AlignBegin=51995|AlignEnd=52755|Gloss=[BIRD]
+2	[s'envoler]	[s'envoler]	VERB	_	_	0	root	_	AlignBegin=52755|AlignEnd=53555|Gloss=[fly-away]|PT=oiseau|PTReal=deux-ailes|Subj=PT
+3	[VOLER]	[VOLER]	VERB	_	_	2	conj:reform	_	AlignBegin=53555|AlignEnd=54155|Gloss=[FLY]|Subj=PRF[oiseau]|Tgt=PSSXr
 </conll>
