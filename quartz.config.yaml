@@ -203,8 +203,10 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        SUD : https://surfacesyntacticud.org
+        GitHub: https://github.com/surfacesyntacticud/pebbles
+        ArboratorGrew: https://arborator.grew.fr
+        Grew-match: https://universal.grew.fr
     layout:
       position: footer
       priority: 50
