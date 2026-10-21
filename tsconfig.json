@@ -2,9 +2,9 @@
   "compilerOptions": {
     "lib": ["esnext", "DOM", "DOM.Iterable"],
     "experimentalDecorators": true,
-    "module": "esnext",
+    "module": "NodeNext",
     "target": "esnext",
-    "moduleResolution": "node",
+    "moduleResolution": "nodeNext",
     "strict": true,
     "incremental": true,
     "resolveJsonModule": true,
@@ -17,6 +17,12 @@
     "jsx": "react-jsx",
     "jsxImportSource": "preact"
   },
-  "include": ["**/*.ts", "**/*.tsx", "./package.json"],
-  "exclude": ["build/**/*.d.ts"]
+  "include": ["quartz/**/*.ts", "quartz/**/*.tsx", "*.ts", "*.tsx", "./package.json"],
+  "exclude": [
+    "build/**/*.d.ts",
+    ".quartz/**/src/**",
+    ".quartz/**/test/**",
+    "node_modules/**",
+    "quartz/cli/tui/**"
+  ]
 }

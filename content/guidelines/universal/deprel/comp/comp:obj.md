@@ -146,8 +146,8 @@ Deep subjects of impersonal constructions are annotated with `comp:obj` relation
 # text_en = There exist by the way many different types of cleats.
 1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	subj@expl	_	Gloss=it
 2	existe	exister	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Gloss=exists|highlight=red
-3	d'	de	ADP	_	_	2	mod	_	Gloss=of
-4	ailleurs	ailleurs	ADV	_	_	3	comp	_	Gloss=elsewhere
+3	d'	de	ADP	_	ExtPos=ADV	2	mod	_	Gloss=of|Idiom=Yes
+4	ailleurs	ailleurs	ADV	_	_	3	comp	_	Gloss=elsewhere|InIdiom=Yes
 5	beaucoup	beaucoup	ADV	_	_	2	comp:obj@agent	_	Gloss=many|highlight=red
 6	de	de	ADP	_	_	5	comp:obl	_	Gloss=of
 7	types	type	NOUN	_	Gender=Masc|Number=Plur	6	comp	_	Gloss=types

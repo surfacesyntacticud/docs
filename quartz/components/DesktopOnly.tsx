@@ -1,9 +1,13 @@
-import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
+import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types.js"
 
 export default ((component: QuartzComponent) => {
   const Component = component
   const DesktopOnly: QuartzComponent = (props: QuartzComponentProps) => {
-    return <Component displayClass="desktop-only" {...props} />
+    return (
+      <div class="desktop-only">
+        <Component {...props} />
+      </div>
+    )
   }
 
   DesktopOnly.displayName = component.displayName

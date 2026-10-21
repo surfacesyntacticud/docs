@@ -1,5 +1,5 @@
-import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
-import { classNames } from "../util/lang"
+import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types.js"
+import { classNames } from "../util/lang.js"
 
 function grew_match_path (treebank: string, request : string): string {
   request = request.replace(/\n/g, "%0A");
