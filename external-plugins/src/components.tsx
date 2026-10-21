@@ -261,9 +261,9 @@ const SudLogo: QuartzComponent = ({ fileData }) => {
 
   return (
     <div class="sud-logo-container">
-      <a href={rootPath} aria-label="SUD Documentation">
+      <a href="https://surfacesyntacticud.org" aria-label="SUD Documentation">
         <img
-          src={`${rootPath}/static/icon.png`}
+          src={`${rootPath}/static/images/sud.svg`}
           alt="SUD"
           class="sud-logo"
         />
@@ -275,14 +275,14 @@ const SudLogo: QuartzComponent = ({ fileData }) => {
 SudLogo.css = `
 .sud-logo-container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
 .sud-logo {
   display: block;
-  width: 48px;
-  height: 48px;
+  width: 84px;
+  height: 84px;
   object-fit: contain;
 }`
 
