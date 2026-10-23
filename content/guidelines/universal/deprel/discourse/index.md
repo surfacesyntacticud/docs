@@ -18,4 +18,5 @@ The relation can be used:
  - without subrelation: [`discourse`](discourse)
  - with subrelation `tag` for tag questions: [`discourse:tag`](guidelines/universal/deprel/discourse/discourse:tag)
  - with subrelation `filler` for filler words: [`discourse:filler`](guidelines/universal/deprel/discourse/discourse:filler)
+ - with subrelation `participant` for the designation of the speaker of some reported speech: [`discourse:participant`](guidelines/universal/deprel/discourse/discourse:participant)
 
