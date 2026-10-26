@@ -15,7 +15,7 @@ The feature `Src` refers to the starting localization in the signing space of a 
 
 Similarly to the feature `Loc` or `Tgt`, the values of these features are placements in the signing space. The conventions used to describe them are based on the grammar of LSF of Millet (2019): they start with the acronym PSS standing for Pre-Semantized Space, the next character indicated the vertical placement ('3' is the lowest, used for 3rd person reference, then 'L' as a locative PSS and finally 'X' is the highest placement), the next character indicated the horizontal placement (either left 'l' or right 'r'). The acronym 'PSSN' stands for 'neutral PSS', articulated in the middle of the signing space. Two other values are possible, namely 'Prs1' and 'Prs2', when the placement are directly refering to the 1st and 2nd person in the given situation.
 
-The element `Src` can then also be a value for other features. This annotation choice (using the same elements as features and as values) allows us to describe independently forms and functions since glossing in written French challenges our ability to represent accurately LSF. In this way, the value of `Src` refers to the form of the sign (here its localization) with no semantic or grammatical specification. Then, `Src` can be the value for the features 'Subj', 'Obj' and 'Obl', associating this form to its grammatical function.
+The element `Src` can then also be a value for other features. This annotation choice (using the same elements as features and as values) allows us to describe independently forms and functions since glossing in written French challenges our ability to represent accurately LSF. In this way, the value of `Src` refers to the form of the sign (here its localization) with no semantic or grammatical specification. Then, `Src` can be the value for the features `Subj`, `Obj` and `Obl`, associating this form to its grammatical function.
 
 <conll>
 # user_id = lg565
@@ -53,4 +53,4 @@ The use of feature `Src` (and `Tgt`) is extended to directional verbs, i.e. verb
 5	[PRÉCIS]	[PRÉCIS]	ADJ	_	_	4	mod	_	AlignBegin=10953|AlignEnd=11425|Gloss=[PRECISE]
 </conll>
 
-In this example, we can see the directional verb [EXPLAIN]. The articulation of the verb from 2nd person to 1st person presents the arguments of the verb and their functions, thus meaning 'you explain to me'.
+In this example, we can see the directional verb [EXPLAIN]. The articulation of the verb from 2nd person to 1st person presents the arguments of the verb and their functions, respectively `Subj` and `Obj`, thus meaning 'you explain to me'.
