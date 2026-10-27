@@ -14,8 +14,6 @@ tags:
 The feature `Manner` allows to describe additional semantic information conveyed simultaneously with a predicative unit about the manner the event takes place. 
 
 <conll>
-# user_id = lg565
-# timestamp = 1793016292370
 # sent_id = crdo-fsl-cuc022_92
 # text = [POIVRE] [ENCORE] [COUPER-en-morceaux] [répandre] [FEUILLE] [FLEUR] [répandre]
 # video_url = https://cocoon.huma-num.fr/data/cuxac/CUC022_low.mp4

@@ -12,8 +12,6 @@ tags:
 The deprel `conj:illustrate` is used for dependency relation when the two elements refer to the same semantic entity and one uses a more iconic process than the other (Sallandre 2001). It contributes to the visual representation of the discourse. This syntactic relation is specific to Sign Languages since they use a visual-gestual modality, leading to a lot of iconic processes. 
 
 <conll>
-# user_id = lg565
-# timestamp = 1792503066055
 # sent_id = vacances-sud_15
 # text = [PERSONNE] [PEU] PRF[PERSONNE]
 # source_file = ./recit-agnieska.mp4

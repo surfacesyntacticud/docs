@@ -40,7 +40,6 @@ This suppression improves consistency, particularly when compared to “leur”,
 # speaker = L2
 # text = je lui ai dit, ben, tu vois, je vends des livres.
 # text_en = I told them, you see, I’m selling books.
-# timestamp = 1751291059990
 1	je	moi	PRON	_	Case=Nom|Emph=No|Number=Sing|Person=1|PronType=Prs	3	subj	_	_
 2	lui	lui	PRON	_	Case=Dat|Emph=No|Number=Sing|Person=3|PronType=Prs	4	comp:obl	_	_
 3	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -73,7 +72,6 @@ Subject pronouns (e.g., “je”, “tu”, “il”, “nous”, “vous”, on
 # sent_id = Rhap_M0010-4
 # text = tu vas tout droit.
 # text_en = you go straight.
-# timestamp = 1751289338319
 1	tu	toi	PRON	_	Case=Nom|Emph=No|Number=Sing|Person=2|PronType=Prs	2	subj	_	_
 2	vas	aller	VERB	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	tout	tout	ADV	_	_	4	mod	_	_
@@ -91,7 +89,6 @@ Direct object pronouns (e.g., “me”, “te”, “le”, “la”, “les”)
 # sent_id = Rhap_M2006-36
 # text = vous le savez.
 # text_en = you know it.
-# timestamp = 1751290810221
 1	vous	vous	PRON	_	Case=Nom|Emph=No|Number=Plur|Person=2|PronType=Prs	3	subj	_	Polite=Unknown
 2	le	le	PRON	_	Case=Acc|Emph=No|Gender=Masc|Number=Sing|Person=3|PronType=Prs	3	comp:obj	_	_
 3	savez	savoir	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	SpaceAfter=No
@@ -107,7 +104,6 @@ Indirect object pronouns (e.g., “me”, “te”, “lui”, “leur”) shoul
 # sent_id = Rhap_M2006-32
 # text = vous vous trouvez au Gosier.
 # text_en = you find yourself in Gosier.
-# timestamp = 1751291059971
 1	vous	vous	PRON	_	Case=Nom|Emph=No|Number=Plur|Person=2|PronType=Prs	3	subj	_	Polite=Unknown
 2	vous	vous	PRON	_	Case=Dat|Emph=No|Number=Plur|Person=2|PronType=Prs	3	comp:obl	_	Polite=Unknown
 3	trouvez	trouver	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -128,7 +124,6 @@ So-called **formes fortes** such as “moi”, “toi”, “lui-même”, “el
 # speaker = L2
 # text = moi, j'ai été fidèle, oui.
 # text_en = I, have been faithful, yes.
-# timestamp = 1751296225636
 1	moi	moi	PRON	_	Emph=Yes|Number=Sing|Person=1|PronType=Prs	4	dislocated:subj	_	SpaceAfter=No
 2	,	,	PUNCT	_	_	1	punct	_	_
 3	j'	moi	PRON	_	Case=Nom|Emph=No|Number=Sing|Person=1|PronType=Prs	4	subj	_	SpaceAfter=No

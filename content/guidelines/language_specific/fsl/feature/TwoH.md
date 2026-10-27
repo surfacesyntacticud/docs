@@ -13,7 +13,7 @@ tags:
 
 This feature `TwoH` refers to an articulation of the sign with two hands, when the standard realization of this sign is one handed. The only possible value for this feature is 'Yes'. 
 
-<conllu>
+<conll>
 # sent_id = vacances-sud_14
 # text = PNT[là] [QUOI] [MER] [NON] [à-l'avant] PNT-SURFACE[derrière] [FORÊT] PNT[là] [RIVIÈRE-petite-sinueuse]
 # source_file = ./recit-agnieska.mp4
@@ -29,6 +29,6 @@ This feature `TwoH` refers to an articulation of the sign with two hands, when t
 7	[FORÊT]	[FORÊT]	NOUN	_	_	6	mod	_	AlignBegin=101509|AlignEnd=103165|Gloss=[FOREST]|NMM=eyebrow-rf
 8	PNT[là]	PNT	ADV	_	_	6	conj:coord	_	AlignBegin=103174|AlignEnd=103439|Gloss=PNT[here]|NMM=eyebrow-raise|Tgt=PSS1
 9	[RIVIÈRE-petite-sinueuse]	[RIVIÈRE]	NOUN	_	_	8	mod	_	AlignBegin=103448|AlignEnd=105461|Gloss=[RIVER-small-winding]
-</conllu>
+</conll>
 
 In this example, the feature `TwoH` specifies that the sign PNT[here] is realized with two hands, pointing to the same point.

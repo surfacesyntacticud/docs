@@ -29,7 +29,6 @@ We distinguish here between:
 # sent_id = fr-ud-train_11240
 # text = Toutes les chansons sont de Pete Townshend, sauf indication contraire.
 # text_en = All songs by Pete Townshend unless otherwise noted.
-# timestamp = 1751971588519
 1	Toutes	tout	ADJ	_	Gender=Fem|Number=Plur	3	mod	_	wordform=toutes
 2	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	3	det	_	_
 3	chansons	chanson	NOUN	_	Number=Plur	4	subj	_	Gender[lex]=Fem
@@ -58,7 +57,6 @@ We distinguish here between:
 # sent_id = fr-ud-train_02047
 # text = Ceux qui arrivent à s'organiser, militer etc... finissent par être manipulé soit de l'intérieur, soit de l'extérieur.
 # text_en = Those who manage to organize, campaign, etc. end up being manipulated either from within or from without.
-# timestamp = 1749489420114.754
 1	Ceux	celui	PRON	_	Gender=Masc|Number=Plur|Person=3|PronType=Dem	11	subj	_	wordform=ceux
 2	qui	qui	PRON	_	PronType=Rel	3	subj	_	_
 3	arrivent	arriver	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	1	mod@relcl	_	_
@@ -93,7 +91,6 @@ We distinguish here between:
 # sent_id = fr-ud-train_05057
 # text = Ilonse se situe à une heure de Nice soit 72 km.
 # text_en = Ilonse is located one hour from Nice, or 72 km.
-# timestamp = 1751986389702
 1	Ilonse	Ilonse	PROPN	_	_	3	subj@pass	_	Gender[lex]=Unknown
 2	se	soi	PRON	_	Person=3|PronType=Prs|Reflex=Yes	3	comp@pass	_	_
 3	situe	situer	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
@@ -122,7 +119,6 @@ Appositive connector ⇒ `CCONJ` introducing an appositive subpart.
 # sent_id = fr-ud-train_01125
 # text = Il a trois frères, dont l'un est l'entomologiste Théodore Lacordaire.
 # text_en = He has three brothers, one of whom is the entomologist Théodore Lacordaire.
-# timestamp = 1751292598730
 1	Il	lui	PRON	_	Emph=No|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	subj	_	Case=Nom|wordform=il
 2	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	trois	trois	NUM	_	ExtPos=DET	4	det	_	Number[lex]=Plur
@@ -148,7 +144,6 @@ dont” is a `CCONJ`, and the deprel`conj:appos` is used to link together the ap
 # sent_id = annodis.er_00386
 # text = Pas moins d'une douzaine d'hommes étaient mobilisés dont l'équipe cynophile.
 # text_en = No fewer than a dozen men were mobilized, including the canine team.
-# timestamp = 1752070709034
 1	Pas	pas	ADV	_	Polarity=Neg	2	mod	_	_
 2	moins	moins	ADV	_	ExtPos=PRON	8	subj@pass	_	_
 3	d'	de	ADP	_	_	2	comp:obl	_	SpaceAfter=No

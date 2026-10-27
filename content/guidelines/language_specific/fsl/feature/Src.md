@@ -18,8 +18,6 @@ Similarly to the feature `Loc` or `Tgt`, the values of these features are placem
 The element `Src` can then also be a value for other features. This annotation choice (using the same elements as features and as values) allows us to describe independently forms and functions since glossing in written French challenges our ability to represent accurately LSF. In this way, the value of `Src` refers to the form of the sign (here its localization) with no semantic or grammatical specification. Then, `Src` can be the value for the features `Subj`, `Obj` and `Obl`, associating this form to its grammatical function.
 
 <conll>
-# user_id = lg565
-# timestamp = 1793008756278
 # sent_id = crdo-fsl-cuc022_84_85
 # text = [PRENDRE] [CHAMPIGNON] [DÉPLACER] [METTRE-dans-poêle] [MÉLANGER] [LAISSER]
 # video_url = https://cocoon.huma-num.fr/data/cuxac/CUC022_low.mp4
@@ -38,8 +36,6 @@ In this example, we see the feature `Src` used to describe the initial localizat
 The use of feature `Src` (and `Tgt`) is extended to directional verbs, i.e. verbs which change their movement and/or orientation to express their arguments, in the grammaticalized signing space.
 
 <conll>
-# user_id = lg565
-# timestamp = 1793012835997
 # sent_id = trajet-len-1-signerB_2_split2
 # text = PNT[TOI] [TRAJET] [POUVOIR] [EXPLIQUER] [PRÉCIS]
 # source_file = ./Trajet_LEN_1.mp4

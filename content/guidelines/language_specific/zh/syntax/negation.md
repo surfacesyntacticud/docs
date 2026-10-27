@@ -113,7 +113,6 @@ Negation of the perfective AUX 有 (yǒu - perfective) :
 
 When negating the perfective 有, this last one can be ommitted and the 没 will directly direct the verb : 
 <conll>
-# user_id = kiriangui
 # text = 你 昨天 没 回家 吗？
 # pinyin = Nǐ zuótiān méi huíjiā ma?
 # text_en = You didn't go back home yesterday?

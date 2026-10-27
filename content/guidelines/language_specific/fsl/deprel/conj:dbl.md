@@ -11,9 +11,7 @@ tags:
 
 The deprel `conj:dbl` is used for dependency relation of cases of doubling. Doubling is the repetition of syntactic constituent. The present cases of doubling concers two identical elements, and the repetitions are not a result of disfluency. It can apply to a single repeated token or a repeated group of tokens, in this case the relation appears on the head of the constituent. In other Sign Languages, the use of doubling is related to questions of information structure and it rather typically signals emphatic or focus-related functions (Meurant 2026). However, this phenomenon is yet rather understudied in LSF.
 
-<conllu>
-# user_id = lg565
-# timestamp = 1792508117144
+<conll>
 # sent_id = vacances-sud_5
 # text = [MAMAN] [hep] [appel] PNT[VOUS] [ADORER] [VACANCES] PNT[étape1] PNT[étape2] PNT[étape3] [QUOI] [PRÉFÉRER] [QUOI]
 # source_file = ./recit-agnieska.mp4
@@ -32,6 +30,6 @@ The deprel `conj:dbl` is used for dependency relation of cases of doubling. Doub
 10	[QUOI]	[QUOI]	PRON	_	PronType=Int	12	conj:dbl	_	AlignBegin=45986|AlignEnd=46412|Exp[lex]=Int|Gloss=[WHAT]|ISMarker[Foc]=Cxn-dbl+NMM|NMM=eyebrow-frown
 11	[PRÉFÉRER]	[PRÉFÉRER]	VERB	_	_	0	root	_	AlignBegin=46421|AlignEnd=46917|Gaze=Prs2|Gloss=[PREFER]|NMM=eyebrow-frown|Reported=Yes|Subj=Gaze
 12	[QUOI]	[QUOI]	PRON	_	PronType=Int	11	comp:obj	_	AlignBegin=46935|AlignEnd=47648|Exp[lex]=Int|Gloss=[WHAT]|ISRole=Foc|NMM=forward-tilt+eyebrow-frown+eye-blink
-</conllu>
+</conll>
 
 This example illustrates a case of doubling of the interrogative pronoun, potentially as a way to emphasize on the importance of this constituent.

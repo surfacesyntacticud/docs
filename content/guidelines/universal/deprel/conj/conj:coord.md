@@ -78,7 +78,6 @@ The relation can be used with the deep extension [`emb`](guidelines/deep_feature
 
 <conll>
 # lang = French
-# timestamp = 1792000125803
 # sent_id = ParisStories_2022_7_chienGourmand__69
 # text = mais dès qu'il sent de la bouffe, et bah, tout de suite, il accourt, il accourt, il accourt.
 # text_en = but as soon as he smells food, well, right away, he runs, runs, runs.
