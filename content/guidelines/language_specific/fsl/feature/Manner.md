@@ -13,7 +13,7 @@ tags:
 
 The feature `Manner` allows to describe additional semantic information conveyed simultaneously with a predicative unit about the manner the event takes place. 
 
-<conllu>
+<conll>
 # user_id = lg565
 # timestamp = 1793016292370
 # sent_id = crdo-fsl-cuc022_92
@@ -28,6 +28,6 @@ The feature `Manner` allows to describe additional semantic information conveyed
 5	[FEUILLE]	[FEUILLE]	NOUN	_	_	4	comp:obj	_	AlignBegin=1181259|AlignEnd=1181699|Gloss=[LEAF]|NMM=forward-tilt
 6	[FLEUR]	[FLEUR]	NOUN	_	_	5	mod	_	AlignBegin=1181699|AlignEnd=1182059|Gloss=[FLOWER]
 7	[répandre]	[répandre]	VERB	_	_	4	conj:dbl	_	AlignBegin=1182059|AlignEnd=1182779|Gloss=[spread]|ISMarker[Foc]=Cxn-dbl|NMM=head-nod+eye-blink
-</conllu>
+</conll>
 
 In this example, the sign [CUT] is modified to describe more specifically the manner, i.e. 'in pieces'.
