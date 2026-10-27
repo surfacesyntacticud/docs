@@ -1,6 +1,5 @@
 ---
-title: Spoken
+title: Spoken specific guidelines
 ---
 
-
-This page is specifc...
+In SUD spoken treebanks, the annotations mainly follow the UD guidelines proposal described [here](https://grew.fr/spoken-language-guidelines/workgroups/spoken-data/).

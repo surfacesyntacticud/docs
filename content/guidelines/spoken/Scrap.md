@@ -23,7 +23,7 @@ In that case, it may happen that a word cannot be attached to its head, because 
 3	son	son	DET	_	_	4	reparandum	_	Gloss=his
 4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	Gloss=the
 5	portrait	portrait	NOUN	_	Gender=Masc|Number=Sing	2	comp:obj	_	Gloss=portrayal
-6	de	de	ADP	_	_	8	reparandum	_	Gloss=of|highlight=red
+6	de	de	ADP	_	_	8	reparandum	_	Gloss=of
 7	notre	son	DET	_	_	6	comp	_	Gloss=our|Scrap=Yes|highlight=red
 8	de	de	ADP	_	_	5	udep	_	Gloss=of
 9	votre	son	DET	_	_	10	det	_	Gloss=your

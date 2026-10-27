@@ -119,7 +119,7 @@ Here is a long sentence with two backchannels, each with a different `tok_id`.
 This annotation is used in the [dependency based view](./dependency_based), merging backchannels with their corresponding head sentences.
 
 > [!note]
-> This kind of annotation is only available in specific dependency based corpora like [SUD_FRANCH-Rhapsodie@db](https://universal.grew.fr/?corpus=SUD_French-Rhapsodie@db).
+> These annotations are only available in specific dependency based corpora like [SUD_French-Rhapsodie@db](https://universal.grew.fr/?corpus=SUD_French-Rhapsodie@db).
 
 Example 3: Dependency based view
 

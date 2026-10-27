@@ -66,7 +66,7 @@ export const Conll: QuartzTransformerPlugin = () => {
                     "shown-metas":
                       "lang,text_fr,text_en,pinyin,sent_id,schema",
                     "hidden-features":
-                      "MISC.SpaceAfter,XPOS,MISC.AlignBegin,MISC.WordAlignmentBegin,MISC.AlignEnd,MISC.WordAlignmentEnd,MISC.wordform,MISC.Cxn,MISC.CxnElt",
+                      "MISC.highlight,MISC.SpaceAfter,XPOS,MISC.AlignBegin,MISC.WordAlignmentBegin,MISC.AlignEnd,MISC.WordAlignmentEnd,MISC.wordform,MISC.Cxn,MISC.CxnElt",
                     interactive: true,
                     "token-spacing": "20",
                     conll: content,

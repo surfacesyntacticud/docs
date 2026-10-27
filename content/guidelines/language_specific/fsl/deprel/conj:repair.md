@@ -1,5 +1,5 @@
 ---
-title: conj:repair
+title: "conj:repair"
 request: pattern { X -[conj:repair]-> Y }
 scope:
   schema: SUD
