@@ -4,7 +4,7 @@ title: Conll inclusion
 
 
 It is possible (and recommended) to add examples in guidelines pages.
-For this, `conll` code can directly be embedded in the page by adding using the `Conll` tag:
+For this, `conll` code can directly be embedded in the page by adding using the `conll` tag:
 
 ```
 <conll>
