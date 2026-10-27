@@ -11,7 +11,7 @@ tags:
 
 # Personal Transfer Realisation
 
-The feature `PTReal` allows us to provide more detail about the elements used to signal the Personal Transfert (PT or Role Shift). 
+The feature `PTReal` allows us to provide more detail about the elements used to signal the Personal Transfer (PT or Role Shift). 
 
 <conll>
 # sent_id = crdo-fsl-cuc022__2
@@ -28,4 +28,4 @@ The feature `PTReal` allows us to provide more detail about the elements used to
 7	[CHEVAL]	[CHEVAL]	NOUN	_	_	1	conj:appos	_	AlignBegin=20035|AlignEnd=21235|Gloss=[HORSE]|ISMarker[Foc]=NMM+Dlxn?|ISRole=Foc|NMM=eyebrow-raise+eye-contact|PT=cheval|PTReal=posture-fière
 </conll>
 
-In this example, the `PT` throughout the full sentence is here the embodiment of a 'horse'. While the PT is stable, its realization changes along the sentence, realized by one or several elements. If multiple elements are used, they are annotated separated by a +. The dash - is used when the words used refer to the same element. On the second to last sign, the value of `PTReal` means 'the PT is signified by the proud posture (posture-fière) together with the two legs (deux-pattes)'.   
+In this example, the `PT` throughout the full sentence is the embodiment of a 'horse'. While the PT is stable, its realization changes along the sentence, realized by one or several elements. If multiple elements are used, they are annotated separated by a plus sign (+). The dash (-) is used when the words used refer to the same element. On the second to last sign, the value of `PTReal` means 'the PT is signified by the proud posture (posture-fière) together with the two legs (deux-pattes)'.   
