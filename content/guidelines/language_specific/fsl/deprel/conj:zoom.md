@@ -9,7 +9,7 @@ tags:
  - deprel
 ---
 
-The deprel `conj:zoom` is used for dependency relation in which the second element is describing the referent more in details.
+The deprel `conj:zoom` is used for dependency relation in which the second element is describing the referent more in details, as if we were zooming on the element/notion.
 
 <conll>
 # sent_id = vacances-sud_4
