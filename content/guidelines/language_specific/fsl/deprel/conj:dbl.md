@@ -27,9 +27,9 @@ The deprel `conj:dbl` is used for dependency relation of cases of doubling. Doub
 7	PNT[étape1]	PNT	ADV	_	_	11	dislocated	_	AlignBegin=45046|AlignEnd=45339|Gloss=PNT[stop1]|ISMarker[Top]=Dlxn+NMM|ISRole=Top|NMM=eyebrow-frown|Tgt=PSS3l
 8	PNT[étape2]	PNT	ADV	_	_	7	conj:coord	_	AlignBegin=45339|AlignEnd=45574|Gloss=PNT[stop2]|NDHHeld=PNT[étape1]|NMM=eyebrow-frown|Tgt=PSSN
 9	PNT[étape3]	PNT	ADV	_	_	8	conj:coord	_	AlignBegin=45574|AlignEnd=45954|Gloss=PNT[stop3]|NDHHeld=PNT[étape1]|NMM=eyebrow-frown|Tgt=PSS3r
-10	[QUOI]	[QUOI]	PRON	_	PronType=Int	12	conj:dbl	_	AlignBegin=45986|AlignEnd=46412|Exp[lex]=Int|Gloss=[WHAT]|ISMarker[Foc]=Cxn-dbl+NMM|NMM=eyebrow-frown
+10	[QUOI]	[QUOI]	PRON	_	PronType=Int	11	comp:obj	_	AlignBegin=45986|AlignEnd=46412|Exp[lex]=Int|Gloss=[WHAT]|ISMarker[Foc]=Cxn-dbl+NMM|NMM=eyebrow-frown
 11	[PRÉFÉRER]	[PRÉFÉRER]	VERB	_	_	0	root	_	AlignBegin=46421|AlignEnd=46917|Gaze=Prs2|Gloss=[PREFER]|NMM=eyebrow-frown|Reported=Yes|Subj=Gaze
-12	[QUOI]	[QUOI]	PRON	_	PronType=Int	11	comp:obj	_	AlignBegin=46935|AlignEnd=47648|Exp[lex]=Int|Gloss=[WHAT]|ISRole=Foc|NMM=forward-tilt+eyebrow-frown+eye-blink
+12	[QUOI]	[QUOI]	PRON	_	PronType=Int	10	conj:dbl	_	AlignBegin=46935|AlignEnd=47648|Exp[lex]=Int|Gloss=[WHAT]|ISRole=Foc|NMM=forward-tilt+eyebrow-frown+eye-blink
 </conll>
 
 This example illustrates a case of doubling of the interrogative pronoun, potentially as a way to emphasize on the importance of this constituent.
