@@ -11,7 +11,7 @@ tags:
 
 # Dominant Hand Held
 
-DH stands for Dominant Hand. The feature `DHHeld` allows us to describe more precisely how the sign is articulated. It is used when the dominant hand (‘main dominante’ in the French literature) keeps the handshape of a sign previously articulated, while a the non-dominant hand refers to a different semantic entity, interacting or not with the content from the dominant-hand. A similar process is possible conversely with a Non-Dominant Hand Held, described as the feature `NDHHeld`. 
+DH stands for Dominant Hand. The feature `DHHeld` allows us to describe more precisely how the sign is articulated. It is used when the dominant hand (‘main dominante’ in the French literature) keeps the handshape of a sign previously articulated, while a the non-dominant hand refers to a different semantic entity, interacting or not with the content from the dominant hand. A similar process is possible conversely with a Non-Dominant Hand Held, described as the feature `NDHHeld`. 
 
 <conll>
 # sent_id = crdo-fsl-cuc022__9
