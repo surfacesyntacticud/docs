@@ -1,6 +1,6 @@
 ---
-title: Focus
-request: pattern { X [Focus] }
+title: Obl
+request: pattern { X [Obl] }
 scope:
   schema: SUD
   lang: fsl
@@ -9,3 +9,5 @@ tags:
  - feature
 ---
 
+
+# Obl
