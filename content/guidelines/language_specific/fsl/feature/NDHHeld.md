@@ -11,23 +11,19 @@ tags:
 
 # Non-Dominant Hand Held
 
-NDHHeld stands for Non-Dominant Hand Held. It describs the fact of holding the element of the non-dominant hand/the nature of the element held?
+NDH stands for Non-Dominant Hand. The feature `NDHHeld` allows us to describe more precisely how the sign is articulated. It is used when the non-dominant hand (‘main dominée’ in the French literature) keeps the handshape of a sign previously articulated, while a the dominant hand refers to a different semantic entity, interacting or not with the content from the non-dominant hand. A similar process is possible conversely with a Dominant Hand Held, described as the feature `DHHeld`.
 
 <conll>
-# sent_id = vacances-sud_1
-# text = [PASSÉ-PROCHE] [VACANCES] [ÉTÉ] [euh] [PARTIR] [OÙ] [FRANCE] [carte-france] [SUD] [région-sud] mains-jointes
-# source_file = ./recit-agnieska.mp4
-# text_fr = Les dernières vacances d’été, on est partis dans le sud de la France.
-# text_en = Last summer holidays, we went to the south of France.
-1	[PASSÉ-PROCHE]	_	ADV	_	_	5	mod	_	AlignBegin=2248|AlignEnd=2717|Gloss=[RECENT-PAST]
-2	[VACANCES]	_	NOUN	_	ExtPos=ADV	1	conj:zoom	_	AlignBegin=2723|AlignEnd=3166|Gloss=[HOLIDAYS]
-3	[ÉTÉ]	_	NOUN	_	_	2	udep	_	AlignBegin=3183|AlignEnd=4330|Gloss=[SUMMER]
-4	[euh]	_	INTJ	_	_	1	discourse	_	AlignBegin=4343|AlignEnd=4992|Gloss=[hesitation]
-5	[PARTIR]	_	VERB	_	_	0	root	_	AlignBegin=5011|AlignEnd=5706|Gloss=[LEAVE]|Src=Prs1
-6	[OÙ]	_	PRON	_	PronType=Int	7	mod	_	AlignBegin=5745|AlignEnd=6867|Exp[lex]=Int|Focus=Yes|Gloss=[WHERE]
-7	[FRANCE]	_	PROPN	_	_	5	comp:obl	_	AlignBegin=6884|AlignEnd=7277|Gloss=[FRANCE]
-8	[carte-france]	_	PRON	_	_	7	conj:illustrate	_	AlignBegin=7296|AlignEnd=8476|Gloss=[map-france]
-9	[SUD]	_	NOUN	_	_	7	udep	_	AlignBegin=8490|AlignEnd=9205|Gloss=[SOUTH]|NDHHeld=prm:carte
-10	[région-sud]	_	PRON	_	_	9	conj:illustrate	_	AlignBegin=9235|AlignEnd=10548|Gloss=[south-region]|NDHHeld=prm:carte
-11	mains-jointes	_	PUNCT	_	_	5	punct	_	AlignBegin=10574|AlignEnd=11065|Gloss=clasped-hands
+# sent_id = crdo-fsl-cuc022_91
+# text = [COUPER] [prendre-POÊLE] [verser] [forme-arrondie/saladier] [verser-dans-saladier]
+# video_url = https://cocoon.huma-num.fr/data/cuxac/CUC022_low.mp4
+# text_fr = Eteindre le feu et verser le contenu de la poêle dans un saladier.
+# text_en = Turn off the burner and pour the content in the pan in a bowl.
+1	[COUPER]	[COUPER]	VERB	_	_	0	root	_	AlignBegin=1175979|AlignEnd=1176779|Gloss=[CUT]
+2	[prendre-POÊLE]	[POÊLE]	VERB	_	_	1	conj:coord	_	AlignBegin=1176779|AlignEnd=1177259|Gloss=[take-PAN]
+3	[verser]	[verser]	VERB	_	_	2	conj:coord	_	AlignBegin=1177259|AlignEnd=1177939|DHHeld=PRF[POÊLE]|Gloss=[pour]|NDH=PRF[contenant]|NMM=eyebrow-raise+head-nod|Obj=DHHeld|Obl=NDH
+4	[forme-arrondie/saladier]	[forme-arrondie/saladier]	NOUN	_	_	3	comp:obl	_	AlignBegin=1177939|AlignEnd=1178499|Gloss=[round-shape/bowl]|NMM=eye-blink
+5	[verser-dans-saladier]	[verser-dans-saladier]	VERB	_	_	3	conj:dbl	_	AlignBegin=1178499|AlignEnd=1179219|Gloss=[pour-in-bowl]|NDHHeld=[saladier]|NMM=head-nod+eye-blink
 </conll>
+
+In this example, the second to last sign is articulated with two hands and on the last sign the NDH hold this previous sign, thus the feature `NDH` is used, describing the semantic content, namely [bowl].
