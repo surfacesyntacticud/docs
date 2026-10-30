@@ -1,6 +1,6 @@
 ---
 title: DHHeld
-request: pattern { X -[DHHeld]-> Y }
+request: pattern { X [DHHeld] }
 scope:
   schema: SUD
   lang: fsl
