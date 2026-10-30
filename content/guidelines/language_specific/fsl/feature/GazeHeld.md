@@ -31,4 +31,4 @@ The feature `GazeHeld` allows us to describe more precisely non-manual elements 
 10	PNT[loin]	PNT	ADV	_	_	9	comp:obj	_	AlignBegin=35315|AlignEnd=36465|GazeHeld=PSS3re|Gloss=PNT[far]|ISMarker[CFoc]=NMM+Spatial|ISRole=CFoc|NMM=eyebrow-raise|Tgt=PSS3re
 </conll>
 
-The use of `GazeHeld` in this example is particularly interesting. It works almost as a pointing gesture, helping to keep referents in mind. The same gaze is held over three signs from PRF[stake] to [be-on] and later over [regarder] and PNT[loin].
+The use of `GazeHeld` in this example is particularly interesting. It works almost as a pointing gesture, helping to keep referents in mind. The same gaze is held over the signs [BIRD] and [be-on] and later over [look] and PNT[far].
