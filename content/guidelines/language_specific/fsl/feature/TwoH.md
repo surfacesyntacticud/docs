@@ -31,4 +31,4 @@ This feature `TwoH` refers to an articulation of the sign with two hands, when t
 9	[RIVIÈRE-petite-sinueuse]	[RIVIÈRE]	NOUN	_	_	8	mod	_	AlignBegin=103448|AlignEnd=105461|Gloss=[RIVER-small-winding]
 </conll>
 
-In this example, the feature `TwoH` specifies that the sign PNT[here] is realized with two hands, pointing to the same point.
+In this example, the feature `TwoH` specifies that the first sign, PNT[here], is realized with two hands, pointing to the same point.
