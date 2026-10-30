@@ -1,6 +1,6 @@
 ---
 title: NDHHeld
-request: pattern { X -[NDHHeld]-> Y }
+request: pattern { X [NDHHeld] }
 scope:
   schema: SUD
   lang: fsl
