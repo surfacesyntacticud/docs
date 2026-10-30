@@ -1,5 +1,5 @@
 ---
-title: Facial expression
+title: Exp
 request: pattern { X [Exp] }
 scope:
   schema: SUD
@@ -8,4 +8,6 @@ type: doc
 tags:
  - feature
 ---
+
+# Facial expression
 
