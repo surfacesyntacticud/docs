@@ -11,7 +11,7 @@ tags:
 
 # Non-Dominant Hand Held
 
-NDH stands for Non-Dominant Hand. The feature `NDHHeld` allows us to describe more precisely how the sign is articulated. It is used when the non-dominant hand (‘main dominée’ in the French literature) keeps the handshape of a sign previously articulated, while a the dominant hand refers to a different semantic entity, interacting or not with the content from the non-dominant hand. A similar process is possible conversely with a Dominant Hand Held, described as the feature `DHHeld`.
+NDH stands for Non-Dominant Hand. The feature `NDHHeld` allows us to describe more precisely how the sign is articulated. It is used when the non-dominant hand (‘main dominée’ in the French literature) keeps the handshape of a sign previously articulated, while a the dominant hand refers to a different semantic entity, interacting or not with the content from the non-dominant hand. A similar process is possible conversely with a Dominant Hand Held, described as the feature `DHHeld`. This feature is specifying that the element was not introduced in this token but rather held with the same form since before, otherwise the feature `NDH` is used.
 
 <conll>
 # sent_id = crdo-fsl-cuc022_91
@@ -26,4 +26,4 @@ NDH stands for Non-Dominant Hand. The feature `NDHHeld` allows us to describe mo
 5	[verser-dans-saladier]	[verser-dans-saladier]	VERB	_	_	3	conj:dbl	_	AlignBegin=1178499|AlignEnd=1179219|Gloss=[pour-in-bowl]|NDHHeld=[saladier]|NMM=head-nod+eye-blink
 </conll>
 
-In this example, the second to last sign is articulated with two hands and on the last sign the NDH hold this previous sign, thus the feature `NDH` is used, describing the semantic content, namely [bowl].
+In this example, the second to last sign is articulated with two hands and on the last sign the NDH hold this previous sign, thus the feature `NDHHeld` is used, describing the semantic content, namely [bowl].
