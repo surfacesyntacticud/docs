@@ -9,7 +9,7 @@ tags:
  - deprel
 ---
 
-The deprel `conj:dbl` is used for dependency relation of cases of doubling. Doubling is the repetition of syntactic constituent. The present cases of doubling concers two identical elements, and the repetitions are not a result of disfluency. It can apply to a single repeated token or a repeated group of tokens, in this case the relation appears on the head of the constituent. In other Sign Languages, the use of doubling is related to questions of information structure and it rather typically signals emphatic or focus-related functions (Meurant 2026). However, this phenomenon is yet rather understudied in LSF.
+The deprel `conj:dbl` is used for dependency relation in cases of doubling. Doubling is the repetition of a syntactic constituent. The annotated cases of doubling are those with two identical elements and those for which the repetition is not a result of disfluency. It can apply to a single repeated token or a repeated group of tokens, in this case the relation appears on the head of the phrase. In other Sign Languages, the use of doubling is related to questions of information structure and it typically signals emphatic or focus-related functions (Meurant 2026). However, this phenomenon is yet rather understudied in LSF.
 
 <conll>
 # sent_id = vacances-sud_5
