@@ -1,6 +1,6 @@
 ---
 title: GazeHeld
-request: pattern { X -[GazeHeld]-> Y }
+request: pattern { X [GazeHeld] }
 scope:
   schema: SUD
   lang: fsl
