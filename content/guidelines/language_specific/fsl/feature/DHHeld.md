@@ -27,4 +27,4 @@ DH stands for Dominant Hand. The feature `DHHeld` allows us to describe more pre
 6	[ouvrir]	[ouvrir]	VERB	_	_	5	conj:chaining	_	AlignBegin=57435|AlignEnd=59355|Gloss=[open]|Loc=PSS3l|Obj=PRF[VALISE]|PT=oiseau|Subj=PT
 </conll>
 
-In this example, the proform for [CHEST] is held over the next two signs, serving as a comment to describe the type of chest present here. 
+In this example, the proform for [CHEST], articulated within the sign [bring] is held over the next two signs (PNT[chest] [PHARMACY]), serving as a comment to describe the type of chest present here. 
