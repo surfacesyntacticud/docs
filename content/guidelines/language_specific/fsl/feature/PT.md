@@ -25,11 +25,11 @@ The feature `PT` allows us to describe better the iconic processes of LSF. This 
 4	[sauter]	[sauter]	VERB	_	_	2	comp:obj	_	AlignBegin=44035|AlignEnd=45235|Gloss=[jump]|NMM=eye-blink|PT=cheval|PTReal=posture-fière|ST=cheval-qui-saute|STReal=PRF(DH)[cheval]|Subj=PT
 </conll>
 
-In this example, the `PT` has the value horse, meaning that the signer is embodying a horse. 
+In this example, the `PT` has the value horse along the entire sentence, meaning that the signer is embodying a horse. 
 
 The use of `PT` usually realizes the function of subject. However, the features `PT` and `Subj` are two distinctive features in our annotation. When the `PT` realizes the subject, it becomes then the value of the feature `Subj`. The same annotation choice was conducted for elements such as `Src` and `Tgt`. This annotation choice (using the same elements as features and as values) allows us to describe independently forms and functions since glossing in written French challenges our ability to represent accurately LSF.
 
-However, `Subj` and `PT` don't always coincide. `PT` is the value of `Subj` when the token is a noun, because the noun does not require a subject argument. Furthermore, the `Subj` can be realized in different ways, using rather (or additionnally) a proform (PRF) or encoded as the source of the movement `Src`. 
+However, `Subj` and `PT` don't always coincide. `PT` is not the value of `Subj` when the token is a noun, because the noun does not require a subject argument. Furthermore, the `Subj` can be realized in different ways, using rather (or additionnally) a proform (PRF) or encoded as the source of the movement `Src`. 
 
 <conll>
 # sent_id = crdo-fsl-cuc022__4
