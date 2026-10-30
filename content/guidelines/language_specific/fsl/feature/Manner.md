@@ -11,7 +11,7 @@ tags:
 
 # Manner
 
-The feature `Manner` allows to describe additional semantic information conveyed simultaneously with a predicative unit about the manner the event takes place. 
+The feature `Manner` allows to describe additional semantic information conveyed simultaneously with a predicative unit about the manner in which the event takes place. 
 
 <conll>
 # sent_id = crdo-fsl-cuc022_92
