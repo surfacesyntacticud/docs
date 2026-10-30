@@ -9,7 +9,7 @@ tags:
  - deprel
 ---
 
-The deprel `conj:contr` is used for dependency relation presented in a contrastive relation. It is used in order to focalize an element. This element is preceded by an alternative, which is negated, thus it focuses on the second element, excluding alternatives. The pattern appears to always be ’Alternative-A/Negation/Alternative-B’, to express an contrastive focus on Alternative-B. This suite is, in most cases, uninterrupted by other constituents.
+The deprel `conj:contr` is used for dependency relation between two alternatives presented for the effect of contrastive focus. This terminology is borrowed from the domaine of information structure, however it points here to a specific syntactic relation. The focalized element is preceded by an alternative, which is negated, thus it focuses on the second element, excluding alternatives. The pattern appears to always be ’Alternative-A/Negation/Alternative-B’, to express an contrastive focus on Alternative-B. This suite is, in most cases, uninterrupted by other constituents.
 
 <conll>
 # sent_id = vacances-sud_23
