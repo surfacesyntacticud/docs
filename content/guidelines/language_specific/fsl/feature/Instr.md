@@ -11,7 +11,7 @@ tags:
 
 # Instrument
 
-The feature `Instr` is used, similarly to `Subj` and `Obj`, to indicate function of a certain element, realized simultaneously with the glossed sign. 
+The feature `Instr` is used, similarly to `Subj` and `Obj`, to indicate the grammatical function of a certain element in a predicate, realized simultaneously with the glossed sign. 
 
 <conll>
 # sent_id = crdo-fsl-cuc022_92
