@@ -36,4 +36,4 @@ The element `Gaze` can then also be a value for other features. This annotation 
 12	[QUOI]	[QUOI]	PRON	_	PronType=Int	10	conj:dbl	_	AlignBegin=46935|AlignEnd=47648|Exp[lex]=Int|Gloss=[WHAT]|ISRole=Foc|NMM=forward-tilt+eyebrow-frown+eye-blink
 </conll>
 
-In this example, the `Gaze` points towards the second person, realizing the role of `Subj`. 
+In this example, on the second to last sign [PREFER], the `Gaze` points towards the second person, realizing the role of `Subj`. 
