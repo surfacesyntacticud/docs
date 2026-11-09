@@ -36,18 +36,7 @@ type Scope = {
   schemas: string[]
 }
 
-const sud: Treebank[] = []
-let tbs = require("../../data/mSUD_2.18.json") as Treebank[]
-sud.push(...tbs)
-tbs = require("../../data/pSUD_2.18.json") as Treebank[]
-sud.push(...tbs)
-tbs = require("../../data/SUD_2.18_native.json") as Treebank[]
-sud.push(...tbs)
-tbs = require("../../data/SUD_2.18_converted.json") as Treebank[]
-sud.push(...tbs)
-
 const pebbles_count = require("../../data/count.json")
-
 
 function grewMatchPath(treebank: string, request: string): string {
   request = request.replace(/\n/g, "%0A")
@@ -88,14 +77,6 @@ function scopeToStrings(scope: Scope): string[] {
   }
 
   return parts
-}
-
-function filterScope(scope: Scope): Treebank[] {
-  return sud.filter((treebank) => {
-    const languageMatches = scope.langs.length === 0 || scope.langs.includes(treebank.lang)
-    const schemaMatches = scope.schemas.length === 0 || scope.schemas.includes(treebank.schema)
-    return languageMatches && schemaMatches
-  })
 }
 
 const PageEdit: QuartzComponent = ({ fileData }) => {
@@ -196,8 +177,6 @@ const Request: QuartzComponent = ({ fileData }) => {
     )
   }
 
-  const filteredTreebanks = filterScope(scope)
-
   return (
     <div>
       <h3 class="badge">{badge}</h3>
@@ -227,35 +206,6 @@ const Request: QuartzComponent = ({ fileData }) => {
         ))
         
       }
-
-      {filteredTreebanks.length} treebank{filteredTreebanks.length > 1 ? "s" : ""}
-      <br />
-      <br />
-      {filteredTreebanks.length > 5 ? (
-        <select
-          class="tb-dropdown"
-          defaultValue=""
-          {...({ onchange: "if(this.value) window.open(this.value,'_blank')" } as Record<string, string>)}
-        >
-          <option value="" disabled>
-            Select treebank...
-          </option>
-          {filteredTreebanks.map((treebank) => (
-            <option key={treebank.id} value={grewMatchPath(treebank.id, request)}>
-              {treebank.id}
-            </option>
-          ))}
-        </select>
-      ) : (
-        filteredTreebanks.map((treebank) => (
-          <span key={treebank.id}>
-            <a class="tb" target="_blank" rel="noreferrer" href={grewMatchPath(treebank.id, request)}>
-              {treebank.id}
-            </a>
-          </span>
-        ))
-      )}
-      <hr />
     </div>
   )
 }
