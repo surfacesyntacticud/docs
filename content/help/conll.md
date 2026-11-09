@@ -1,12 +1,12 @@
 ---
-title: Conll inclusion
+title: Annotation examples
 ---
-
 
 It is possible (and recommended) to add examples in guidelines pages.
 For this, `conll` code can directly be embedded in the page by adding using the `conll` tag:
 
 ```
+
 <conll>
 … conll code …
 </conll>
@@ -14,6 +14,14 @@ For this, `conll` code can directly be embedded in the page by adding using the 
 
 > [!warning]
 > For a proper rendering, one empty line should be added before the `<conll>` tag!
+> The code below, for instance, will not disaplay the examples correctly.
+```
+Some text on the line before the tag is not allowed.
+<conll>
+… conll code …
+</conll>
+```
+
 
 ## Examples
 
@@ -21,7 +29,7 @@ A SUD annotation example:
 
 <conll>
 # lang = English
-# text = I'm happy about this.
+# text = I'm happy about SUD.
 1	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	subj	_	SpaceAfter=No
 2	'm	be	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	happy	happy	ADJ	JJ	Degree=Pos	2	comp:pred	_	_
@@ -30,28 +38,58 @@ A SUD annotation example:
 6	.	.	PUNCT	.	_	2	punct	_	_
 </conll>
 
-Note that the metadata `lang` is required in pages that are not specific to only one language.
+Note that the metadata `lang` is recommanded in pages that are not specific to only one language.
 
-Colors can be added on tokens with a features `highlight=<color>` in MISC column:
+When examples are not in English, it is also recommended to add an Engligh translation with the metadata indentifier `text_en` and to add to each token in the sentence a feature `Gloss` with a token level English equivalent.
 
-```
-…
-3	happy	happy	ADJ	JJ	Degree=Pos	2	comp:pred	_	highlight=red
-…
-```
+<conll>
+# sent_id = fr-ud-train_05039
+# text = L'entrée est gratuite.
+# text_en = Admission is free.
+1	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No|Gloss=the
+2	entrée	entrée	NOUN	_	Gender=Fem|Number=Sing	3	subj	_	Gloss=entrance
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Gloss=is
+4	gratuite	gratuit	ADJ	_	Gender=Fem|Number=Sing	3	comp:pred	_	SpaceAfter=No|Gloss=free
+5	.	.	PUNCT	_	_	3	punct	_	_
+</conll>
+
+
+
+## Highlighting in examples
+To make the examples more readable, two pseudo-features can be added in the MISC column:
+ - `highlight=<color>` will deplay the corresponding token with the given color
+ - `highlight_dep=<color>` will deplay the corresponding dependency with the given color
+
+See below an exmaple of such highlight, with the corresponding code.
 
 <conll>
 # lang = English
-# text = I'm happy about this.
-1	I	I	PRON	PRP	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	subj	_	SpaceAfter=No
-2	'm	be	AUX	VBP	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	happy	happy	ADJ	JJ	Degree=Pos	2	comp:pred	_	highlight=red
-4	about	about	ADP	IN	_	3	mod	_	_
-5	mSUD	mSUD	PROPN	DT	Number=Sing	4	comp	_	highlight=blue|SpaceAfter=No
-6	.	.	PUNCT	.	_	2	punct	_	_
+# text = I'm happy about colors.
+1	I	I	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	subj	_	SpaceAfter=No|highlight_dep=lightgreen
+2	'm	be	AUX	_	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	happy	happy	ADJ	_	Degree=Pos	2	comp:pred	_	highlight=red
+4	about	about	ADP	_	_	3	mod	_	_
+5	colors	color	NOUN	_	Number=Sing	4	comp	_	highlight=blue|SpaceAfter=No
+6	.	.	PUNCT	_	_	2	punct	_	_
 </conll>
 
-To avoid confusion, for example of UD annotations, we use the tag: `<conll schema="ud">`, which has a different background colour.
+```
+<conll>
+# lang = English
+# text = I'm happy about colors.
+1	I	I	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	2	subj	_	SpaceAfter=No|highlight_dep=lightgreen
+2	'm	be	AUX	_	Mood=Ind|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	happy	happy	ADJ	_	Degree=Pos	2	comp:pred	_	highlight=red
+4	about	about	ADP	_	_	3	mod	_	_
+5	colors	color	NOUN	_	Number=Sing	4	comp	_	highlight=blue|SpaceAfter=No
+6	.	.	PUNCT	_	_	2	punct	_	_
+</conll>
+```
+
+## Special background colors
+
+In some place, we want to contrast SUD annotation with the corresponding UD one.
+To avoid confusion, for example of such UD annotations, we use the tag: `<conll schema="ud">`, which has a different background colour.
 
 <conll schema="ud">
 # lang = English
@@ -67,7 +105,8 @@ To avoid confusion, for example of UD annotations, we use the tag: `<conll schem
 </conll>
 
 
-The tag: `<conll deprecated="yes">`, with an red background colour can be used to signal deprecated annotations.
+
+The tag: `<conll deprecated="yes">`, with an red background color can be used to signal deprecated annotations.
 For instance, below an annotation using the deprecated `@fixed` notation.
 
 <conll deprecated="yes">
@@ -77,8 +116,8 @@ For instance, below an annotation using the deprecated `@fixed` notation.
 3	mentorship	mentorship	NOUN	_	_	1	conj	_	_
 4	should	shall	AUX	_	_	0	root	_	_
 5	go	go	VERB	_	_	4	comp:aux	_	_
-6	hand	hand	NOUN	_	ExtPos=ADV	5	mod	_	highlight=red
-7	in	in	ADP	_	_	6	udep@fixed	_	highlight=red
-8	hand	hand	NOUN	_	_	7	comp@fixed	_	highlight=red
+6	hand	hand	NOUN	_	ExtPos=ADV	5	mod	_	_
+7	in	in	ADP	_	_	6	udep@fixed	_	highlight_dep=red
+8	hand	hand	NOUN	_	_	7	comp@fixed	_	highlight_dep=red
 </conll>
 

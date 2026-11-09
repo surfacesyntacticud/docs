@@ -9,7 +9,7 @@ tags:
  - spoken
 ---
 
-This relation is used to indicate difluencies, such as when a speaker corrects their speech.
+This relation is used to indicate disfluencies, such as when a speaker corrects their speech.
 It is similar to the [`reparandum` UD relation](https://universaldependencies.org/u/dep/reparandum.html), but in SUD, especially for spoken data, it is in in concurrence with [`conj:reform`](https://pebbles.surfacesyntacticud.org/guidelines/universal/deprel/conj/conj:reform). 
 
 `reparandum` is a relation between a reparandum and its repair. Two cases are possible :
