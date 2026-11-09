@@ -148,8 +148,10 @@ const Request: QuartzComponent = ({ fileData }) => {
   const request = fileData.frontmatter?.request
   const scope = buildScope(fileData.frontmatter)
 
-  const count_by_corpora : Record<string, number> = 
-    pebbles_count.pebbles[fileData.relativePath]["count"]
+  const count_by_corpora : Record<string, number> =
+    (fileData.relativePath in pebbles_count.pebbles)
+      ? pebbles_count.pebbles[fileData.relativePath]["count"]
+      : {}
   const corpora_nb = Object.keys(count_by_corpora).length
 
   const sorted_relevant : [string, number][] =
