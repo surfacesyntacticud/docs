@@ -1,7 +1,7 @@
 import type { VNode } from "preact"
 
 type PageFileData = {
-  relativePath?: string
+  relativePath: string
   slug?: string
   frontmatter?: {
     status?: unknown
@@ -45,6 +45,9 @@ tbs = require("../../data/SUD_2.18_native.json") as Treebank[]
 sud.push(...tbs)
 tbs = require("../../data/SUD_2.18_converted.json") as Treebank[]
 sud.push(...tbs)
+
+const pebbles_count = require("../../data/count.json")
+
 
 function grewMatchPath(treebank: string, request: string): string {
   request = request.replace(/\n/g, "%0A")
@@ -164,6 +167,17 @@ const Request: QuartzComponent = ({ fileData }) => {
   const request = fileData.frontmatter?.request
   const scope = buildScope(fileData.frontmatter)
 
+  const count_by_corpora : Record<string, number> = 
+    pebbles_count.pebbles[fileData.relativePath]["count"]
+  const corpora_nb = Object.keys(count_by_corpora).length
+
+  const sorted_relevant : [string, number][] =
+    Object.entries(count_by_corpora)
+    .filter(([, value]) => value !== 0)
+    .sort(([, valueA], [, valueB]) => valueB - valueA);
+  const relevant_corpora_nb = sorted_relevant.length
+
+
   let badge = ""
   switch (type) {
     case "valid":
@@ -192,10 +206,28 @@ const Request: QuartzComponent = ({ fileData }) => {
           <li key={value}>{value}</li>
         ))}
       </ul>
+
       <pre>
         <code class="language-grew">{request}</code>
       </pre>
-      <br />
+
+      <p>
+      The request is found in {Math.round (100*relevant_corpora_nb/corpora_nb)}% of the corpora
+      ({relevant_corpora_nb} out of {corpora_nb})
+      </p>
+
+      {
+        sorted_relevant.map(([key, value]) => (
+          <span class="tb-button">
+            <a class="tb" target="_blank" rel="noreferrer" href={grewMatchPath(key, request)}>
+              {key}
+              <span class="count">{value}</span>
+            </a>
+          </span>
+        ))
+        
+      }
+
       {filteredTreebanks.length} treebank{filteredTreebanks.length > 1 ? "s" : ""}
       <br />
       <br />
@@ -244,15 +276,28 @@ Request.css = `
   text-align: center;
   border-radius: 5px;
 }
+.tb-button {
+  display: inline-block;
+  margin: 2px;
+}
 .tb {
-  background-color: #5d916a;
+  display: inline-block;
+  background-color: #4acd6b;
   font-size: x-small;
-  margin: 5px;
   color: white;
-  padding: 4px 8px;
+  padding: 8px;
   text-align: center;
   border-radius: 5px;
+  white-space: nowrap;
 }
+.count {
+  background-color: black;
+  color: white;
+  padding: 2px 6px;
+  text-align: center;
+  border-radius: 5px;
+  margin-left: 6px;
+} 
 `
 const SudLogo: QuartzComponent = ({ fileData }) => {
   const slug = fileData.slug ?? ""
