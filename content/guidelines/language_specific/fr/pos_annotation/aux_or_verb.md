@@ -19,10 +19,11 @@ It is sometimes not trivial to chose between the part of speech `AUX` and `VERB`
 <conll>
 # sent_id = fr-ud-train_05039
 # text = L'entrée est gratuite.
-1	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No
-2	entrée	entrée	NOUN	_	Gender=Fem|Number=Sing	3	subj	_	_
-3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	gratuite	gratuit	ADJ	_	Gender=Fem|Number=Sing	3	comp:pred	_	SpaceAfter=No
+# text_en = Admission is free.
+1	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No|Gloss=the
+2	entrée	entrée	NOUN	_	Gender=Fem|Number=Sing	3	subj	_	Gloss=entrance
+3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Gloss=is
+4	gratuite	gratuit	ADJ	_	Gender=Fem|Number=Sing	3	comp:pred	_	SpaceAfter=No|Gloss=free
 5	.	.	PUNCT	_	_	3	punct	_	_
 </conll>
 
