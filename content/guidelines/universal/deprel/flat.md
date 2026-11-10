@@ -15,9 +15,9 @@ However, it is most frequently used to connect the various elements of proper na
 # lang = English
 # sent_id = GUM_bio_emperor-18
 # text = Emperor Joshua Norton, in full military regalia, circa 1880 or earlier
-1	Emperor	Emperor	PROPN	NNP	Number=Sing	0	root	_	highlight=red
-2	Joshua	Joshua	PROPN	NNP	Number=Sing	1	flat	_	highlight=red
-3	Norton	Norton	PROPN	NNP	Number=Sing	2	flat	_	highlight=red
+1	Emperor	Emperor	PROPN	NNP	Number=Sing	0	root	_	_
+2	Joshua	Joshua	PROPN	NNP	Number=Sing	1	flat	_	highlight_dep=red
+3	Norton	Norton	PROPN	NNP	Number=Sing	2	flat	_	highlight_dep=red
 4	,	,	PUNCT	,	_	5	punct	_	_
 5	in	in	ADP	IN	_	1	udep	_	_
 6	full	full	ADJ	JJ	Degree=Pos	8	mod	_	_
@@ -35,8 +35,8 @@ However, it is most frequently used to connect the various elements of proper na
 # sent_id = GUM_interview_cyclone-24
 # text = Once Cyclone Phailin comes on shore it will immediately begin to lose strength.
 1	Once	once	SCONJ	IN	_	8	mod	_	_
-2	Cyclone	Cyclone	PROPN	NNP	Number=Sing	4	subj	_	highlight=red
-3	Phailin	Phailin	PROPN	NNP	Number=Sing	2	flat	_	highlight=red
+2	Cyclone	Cyclone	PROPN	NNP	Number=Sing	4	subj	_	_
+3	Phailin	Phailin	PROPN	NNP	Number=Sing	2	flat	_	highlight_dep=red
 4	comes	come	VERB	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	comp	_	_
 5	on	on	ADP	IN	_	4	udep	_	_
 6	shore	shore	NOUN	NN	Number=Sing	5	comp	_	_
@@ -63,8 +63,8 @@ The `flat` relation can also be used to link individual elements of numbers to o
 4	d'	de	ADP	_	_	3	comp:obl	_	SpaceAfter=No
 5	album	album	NOUN	_	Gender=Masc|Number=Sing	4	comp	_	_
 6	de	de	ADP	_	_	5	udep	_	_
-7	quarante	quarante	NUM	_	Number=Plur	9	det	_	highlight=red
-8	quatre	quatre	NUM	_	Number=Plur	7	flat	_	highlight=red
+7	quarante	quarante	NUM	_	Number=Plur	9	det	_	_
+8	quatre	quatre	NUM	_	Number=Plur	7	flat	_	highlight_dep=red
 9	pages	page	NOUN	_	Gender=Fem|Number=Plur	6	comp	_	_
 10	en	en	ADP	_	_	5	udep	_	_
 11	grand	grand	ADJ	_	Gender=Masc|Number=Sing	12	mod	_	_

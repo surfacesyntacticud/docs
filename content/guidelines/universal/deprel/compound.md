@@ -15,8 +15,8 @@ SUD annotations for some languages, such as French, do not use the `compound` re
 # lang = English
 1	Put	put	VERB	VB	Mood=Imp|Person=2|VerbForm=Fin	0	root	_	_
 2	the	the	DET	DT	Definite=Def|PronType=Art	4	det	_	_
-3	cider	cider	NOUN	NN	Number=Sing	4	compound	_	highlight=red
-4	vinegar	vinegar	NOUN	NN	Number=Sing	1	comp:obj	_	highlight=red
+3	cider	cider	NOUN	NN	Number=Sing	4	compound	_	highlight_dep=red
+4	vinegar	vinegar	NOUN	NN	Number=Sing	1	comp:obj	_	_
 5	into	into	ADP	IN	_	1	udep	_	_
 6	a	a	DET	DT	Definite=Ind|PronType=Art	8	det	_	_
 7	small	small	ADJ	JJ	Degree=Pos	8	mod	_	_
@@ -24,8 +24,8 @@ SUD annotations for some languages, such as French, do not use the `compound` re
 9	and	and	CCONJ	CC	_	10	cc	_	_
 10	add	add	VERB	VB	Mood=Imp|Person=2|VerbForm=Fin	1	conj	_	_
 11	the	the	DET	DT	Definite=Def|PronType=Art	13	det	_	_
-12	soy	soy	NOUN	NN	Number=Sing	13	compound	_	highlight=red
-13	milk	milk	NOUN	NN	Number=Sing|Shared=No	10	comp:obj	_	highlight=red
+12	soy	soy	NOUN	NN	Number=Sing	13	compound	_	highlight_dep=red
+13	milk	milk	NOUN	NN	Number=Sing|Shared=No	10	comp:obj	_	_
 </conll>
 
 

@@ -22,9 +22,9 @@ It is similar to the [`reparandum` UD relation](https://universaldependencies.or
 # text = j'ai j'ai vraiment adoré ce côté là .
 # text_en = I did I did really like that part
 1	j'	moi	PRON	_	Number[lex]=Sing|Person[lex]=1|PronType=Prs	2	subj	_	SpaceAfter=No|Gloss=I
-2	ai	avoir	AUX	_	Number=Sing|Person=1	4	reparandum	_	Gloss=have|highlight=red
+2	ai	avoir	AUX	_	Number=Sing|Person=1	4	reparandum	_	Gloss=have|highlight_dep=red
 3	j'	moi	PRON	_	Number[lex]=Sing|Person[lex]=1|PronType=Prs	4	subj	_	SpaceAfter=No|Gloss=I
-4	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	Gloss=have|highlight=red
+4	ai	avoir	AUX	_	Mood=Ind|Number=Sing|Person=1|Tense=Pres|VerbForm=Fin	0	root	_	Gloss=have
 5	vraiment	vraiment	ADV	_	_	6	mod	_	Gloss=really
 6	adoré	adorer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	4	comp:aux	_	Gloss=loved
 7	ce	ce	DET	_	_	8	det	_	Gloss=that
@@ -60,14 +60,14 @@ It is similar to the [`reparandum` UD relation](https://universaldependencies.or
 18	précautions	précaution	NOUN	_	_	15	comp	_	Gender[lex]=Fem|Number[ctxt]=Plur
 19	qu'	que	PRON	_	PronType=Rel	21	comp:obj	_	SpaceAfter=No
 20	il	lui	PRON	_	Case=Nom|Emph=No|Gender=Masc|Number=Sing|PronType=Prs|Shared=No	21	subj@expl	_	Person[lex]=3
-21	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	28	reparandum	_	Person[ctxt]=3|SpaceAfter=No|highlight=red
+21	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	28	reparandum	_	Person[ctxt]=3|SpaceAfter=No|highlight_dep=red
 22	,	,	PUNCT	_	_	21	punct	_	_
 23	d'	de	ADP	_	_	18	udep	_	SpaceAfter=No
 24	usage	usage	NOUN	_	_	23	comp	_	Gender[lex]=Masc|LiaisonPossibleBefore=Yes|Number[ctxt]=Sing|SpaceAfter=No
 25	,	,	PUNCT	_	_	23	punct	_	_
 26	qu'	que	PRON	_	PronType=Rel	29	comp:obj	_	SpaceAfter=No
 27	il	lui	PRON	_	Case=Nom|Emph=No|Gender=Masc|Number=Sing|PronType=Prs	28	subj@expl	_	Person[lex]=3
-28	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	18	mod@relcl	_	Person[ctxt]=3|highlight=red
+28	faut	falloir	VERB	_	Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	18	mod@relcl	_	Person[ctxt]=3
 29	mettre	mettre	VERB	_	VerbForm=Inf	28	comp:obj	_	Subject=NoRaising
 30	,	,	PUNCT	_	_	6	punct	_	_
 31	c'	ce	PRON	_	PronType=Dem	32	subj	_	Gender[lex]=Masc|Number[lex]=Sing|Person[lex]=3|SpaceAfter=No
@@ -87,12 +87,12 @@ Note that the reparandum has been attached to its repair in the previous example
 3	ouais	ouais	INTJ	_	_	15	discourse	_	SpaceAfter=No
 4	,	,	PUNCT	_	_	3	punct	_	_
 5	enfin	enfin	ADV	_	ExtPos=INTJ	15	discourse	_	_
-6	je	moi	PRON	_	Case=Nom|Emph=No|PronType=Prs	8	reparandum	_	Number[lex]=Sing|Person[lex]=1|SpaceAfter=No
+6	je	moi	PRON	_	Case=Nom|Emph=No|PronType=Prs	8	reparandum	_	Number[lex]=Sing|Person[lex]=1|SpaceAfter=No|highlight_dep=red
 7	,	,	PUNCT	_	_	6	punct	_	_
-8	on	on	PRON	_	PronType=Ind	10	reparandum	_	Gender[ctxt]=Masc|Number[lex]=Sing|Person[lex]=3|SpaceAfter=No
+8	on	on	PRON	_	PronType=Ind	10	reparandum	_	Gender[ctxt]=Masc|Number[lex]=Sing|Person[lex]=3|SpaceAfter=No|highlight_dep=red
 9	,	,	PUNCT	_	_	8	punct	_	_
 10	c'	ce	PRON	_	PronType=Dem	11	subj	_	Gender[lex]=Masc|Number[lex]=Sing|Person[lex]=3|SpaceAfter=No
-11	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	15	reparandum	_	_
+11	était	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Imp|VerbForm=Fin	15	reparandum	_	highlight_dep=red
 12	XXX	XXX	X	_	_	11	unk	_	Scrap=Yes|SpaceAfter=No
 13	,	,	PUNCT	_	_	11	punct	_	_
 14	ça	ça	PRON	_	PronType=Dem	15	subj	_	Gender[lex]=Masc|Number[lex]=Sing|Person[lex]=3
@@ -132,8 +132,8 @@ The reparandum forms a unit, even if it is incomplete. In the following example,
 13	découvert	découvrir	VERB	_	Gender=Masc|VerbForm=Part|Voice=Act	12	comp:aux@tense	_	Number[ctxt]=Sing|Tense[denom]=Past
 14	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	InIdiom=Yes
 15	peu	peu	NOUN	_	ExtPos=ADV	13	mod	_	Gender[lex]=Masc|Idiom=Yes|Number[ctxt]=Sing
-16	d'	un	DET	_	Definite=Ind|Number=Plur|PronType=Art|Shared=No	17	det	_	Head=Position|LiaisonAfter=Yes|SpaceAfter=No|highlight=red
-17	autres	autre	ADJ	_	_	20	reparandum	_	Gender[ctxt]=Masc|Number[ctxt]=Plur|Promotion=mod|Scrap=Yes|highlight=red
+16	d'	un	DET	_	Definite=Ind|Number=Plur|PronType=Art|Shared=No	17	det	_	Head=Position|LiaisonAfter=Yes|SpaceAfter=No
+17	autres	autre	ADJ	_	_	20	reparandum	_	Gender[ctxt]=Masc|Number[ctxt]=Plur|Promotion=mod|Scrap=Yes|highlight_dep=red
 18	d'	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	20	det	_	LiaisonAfter=Yes|SpaceAfter=No
 19	autres	autre	ADJ	_	_	20	mod	_	Gender[ctxt]=Masc|Number[ctxt]=Plur
 20	mondes	monde	NOUN	_	_	13	comp:obj	_	Gender[lex]=Masc|Number[ctxt]=Plur|SpaceAfter=No

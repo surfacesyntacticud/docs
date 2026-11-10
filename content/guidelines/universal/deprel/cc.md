@@ -18,11 +18,11 @@ It is, in most of the cases, used with the relation [`conj:coord`](guidelines/un
 # sent_id = fr-ud-train_07737
 # text = Des chambres spacieuses et propres.
 # text_en = Spacious and clean rooms.
-1	Des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	2	det	_	wordform=des
+1	Des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	2	det	_	Gloss=INDF
 2	chambres	chambre	NOUN	_	Number=Plur	0	root	_	Gender[lex]=Fem|Gloss=rooms
 3	spacieuses	spacieux	ADJ	_	Gender=Fem|Number=Plur	2	mod	_	Gloss=spacious
-4	et	et	CCONJ	_	_	5	cc	_	Gloss=and|highlight=red
-5	propres	propre	ADJ	_	Number=Plur	3	conj:coord	_	Gender[ctxt]=Fem|SpaceAfter=No|Gloss=clean|highlight=red
+4	et	et	CCONJ	_	_	5	cc	_	Gloss=and|highlight_dep=red
+5	propres	propre	ADJ	_	Number=Plur	3	conj:coord	_	Gender[ctxt]=Fem|SpaceAfter=No|Gloss=clean
 6	.	.	PUNCT	_	_	2	punct	_	_
 </conll>
 
