@@ -20,16 +20,10 @@ type QuartzComponentProps = {
 
 type QuartzComponent = ((props: QuartzComponentProps) => VNode | null) & {
   css?: string
+  afterDOMLoaded?: string
 }
 
 type QuartzComponentConstructor = (_opts?: undefined) => QuartzComponent
-
-type Treebank = {
-  id: string
-  schema: string
-  lang: string
-  audio?: boolean
-}
 
 type Scope = {
   langs: string[]
@@ -192,22 +186,23 @@ const Request: QuartzComponent = ({ fileData }) => {
         <code class="language-grew">{request}</code>
       </pre>
 
-      <p>
-      The request is found in {Math.round (100*relevant_corpora_nb/corpora_nb)}% of the corpora
+      <button type="button" class="collapsible">
+      The request is found in {(100*relevant_corpora_nb/corpora_nb).toFixed(2)}% of the corpora
       ({relevant_corpora_nb} out of {corpora_nb})
-      </p>
+      </button>
 
-      {
-        sorted_relevant.map(([key, value]) => (
-          <span class="tb-button">
-            <a class="tb" target="_blank" rel="noreferrer" href={grewMatchPath(key, request)}>
-              {key}
-              <span class="count">{value}</span>
-            </a>
-          </span>
-        ))
-        
-      }
+      <div class="treebanks">
+        {
+          sorted_relevant.map(([key, value]) => (
+            <span class="tb-button">
+              <a class="tb" target="_blank" rel="noreferrer" href={grewMatchPath(key, request)}>
+                {key}
+                <span class="count">{value}</span>
+              </a>
+            </span>
+          ))
+        }
+      </div>
     </div>
   )
 }
@@ -234,9 +229,9 @@ Request.css = `
 }
 .tb {
   display: inline-block;
-  background-color: #4acd6b;
+  background-color: #a2e3b3;
   font-size: x-small;
-  color: white;
+  color: black;
   padding: 8px;
   text-align: center;
   border-radius: 5px;
@@ -249,8 +244,49 @@ Request.css = `
   text-align: center;
   border-radius: 5px;
   margin-left: 6px;
-} 
+}
+.collapsible {
+  background-color: #6ab2b5;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+.collapsible:hover {
+  background-color: #4f989b;
+}
+
+.treebanks {
+  padding: 0 18px;
+  overflow: hidden;
+  display: none;
+  background-color: #f1f1f1;
+}
 `
+
+Request.afterDOMLoaded = `
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+} `
+
+
 const SudLogo: QuartzComponent = ({ fileData }) => {
   const slug = fileData.slug ?? ""
   const segments = slug.split("/").filter(Boolean)
