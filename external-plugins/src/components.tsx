@@ -255,9 +255,17 @@ Request.css = `
   width: 100%;
   border: none;
   outline: none;
-  font-size: 15px;
+  font-size: 20px;
 }
-
+.collapsible:after {
+  content: '+';
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+.collapsible.active:after {
+  content: "-";
+}
 .collapsible:hover {
   background-color: #4f989b;
 }
