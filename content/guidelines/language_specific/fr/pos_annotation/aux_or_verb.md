@@ -66,9 +66,9 @@ It is sometimes not trivial to chose between the part of speech `AUX` and `VERB`
 1	Ils	eux	PRON	_	Emph=No|Gender=Masc|Number=Plur|Person=3|PronType=Prs	2	subj	_	_
 2	sont	être	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	sur	sur	ADP	_	_	2	comp:obl	_	_
-4	Cherbourg	Cherbourg	PROPN	_	_	3	comp:obj	_	_
+4	Cherbourg	Cherbourg	PROPN	_	_	3	comp	_	_
 5	depuis	depuis	ADP	_	_	2	mod	_	_
-6	2007	2007	NUM	_	Number=Plur	5	comp:obj	_	SpaceAfter=No
+6	2007	2007	NUM	_	Number=Plur	5	comp	_	SpaceAfter=No
 7	.	.	PUNCT	_	_	2	punct	_	_
 </conll>
 

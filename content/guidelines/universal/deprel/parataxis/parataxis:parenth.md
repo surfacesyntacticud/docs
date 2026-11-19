@@ -38,7 +38,7 @@ A parenthetical clause could form an independent sentence.
 19	s'	se	PRON	_	Person=3|PronType=Prs	20	comp	_	Gloss=itself|InIdiom=Yes
 20	appelle	appeler	VERB	_	ExtPos=VERB	7	mod@relcl	_	Gloss=calls|Idiom=Yes
 21	Un	Un	DET	_	_	22	det	_	Gloss=a|InTitle=Yes
-22	Barrage	Barrage	NOUN	_	ExtPOS=PROPN	20	comp:obj	_	Gloss=dam|Title=Yes
+22	Barrage	Barrage	NOUN	_	ExtPOS=PROPN	20	comp:pred	_	Gloss=dam|Title=Yes
 23	contre	contre	ADP	_	_	22	udep	_	Gloss=against|InTitle=Yes
 24	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	25	det	_	Gloss=the|InTitle=Yes
 25	Pacifique	Pacifique	PROPN	_	_	23	comp	_	Gloss=Pacific|InTitle=Yes

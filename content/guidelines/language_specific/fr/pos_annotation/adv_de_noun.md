@@ -31,14 +31,14 @@ We use the features `Idiom` and `ExtPos` to consider the initial `ADV` as a `PRO
 4	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	5	det	_	_
 5	brochettes	brochette	NOUN	_	Gender=Fem|Number=Plur	8	subj	_	_
 6	de	de	ADP	_	_	5	udep	_	_
-7	poulet	poulet	NOUN	_	Gender=Masc|Number=Sing	6	comp:obj	_	_
-8	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	comp:obj	_	_
+7	poulet	poulet	NOUN	_	Gender=Masc|Number=Sing	6	comp	_	_
+8	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	comp	_	_
 9	exquises	exquis	ADJ	_	Gender=Fem|Number=Plur	8	comp:pred	_	_
 10	avec	avec	ADP	_	_	8	mod	_	_
 11	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	InIdiom=Yes
-12	peu	peu	ADV	_	ExtPos=PRON	10	comp:obj	_	Idiom=Yes
+12	peu	peu	ADV	_	ExtPos=PRON	10	comp	_	Idiom=Yes
 13	de	de	ADP	_	_	12	comp:obl	_	_
-14	sauce	sauce	NOUN	_	Gender=Fem|Number=Sing	13	comp:obj	_	_
+14	sauce	sauce	NOUN	_	Gender=Fem|Number=Sing	13	comp	_	_
 15	!	!	PUNCT	_	_	2	punct	_	_
 </conll>
 
@@ -71,7 +71,7 @@ We use the features `Idiom` and `ExtPos` to consider the initial `ADV` as a `PRO
 6	trouve	trouver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 7	plein	plein	ADV	_	ExtPos=PRON	6	comp:obj	_	_
 8	de	de	ADP	_	_	7	comp:obl	_	_
-9	marques	marque	NOUN	_	Gender=Fem|Number=Plur	8	comp:obj	_	SpaceAfter=No
+9	marques	marque	NOUN	_	Gender=Fem|Number=Plur	8	comp	_	SpaceAfter=No
 10	.	.	PUNCT	_	_	6	punct	_	_
 </conll>
 
@@ -81,7 +81,7 @@ We use the features `Idiom` and `ExtPos` to consider the initial `ADV` as a `PRO
 # text = Nombre d'investisseurs qui, auparavant, voyaient d'un mauvais œil l'accumulation de liquidités par les entreprises reconnaissent maintenant les avantages de la constitution de réserves de liquidités importantes.
 1	Nombre	nombre	ADV	_	ExtPos=PRON	20	subj	_	_
 2	d'	de	ADP	_	_	1	comp:obl	_	SpaceAfter=No
-3	investisseurs	investisseur	NOUN	_	Gender=Masc|Number=Plur	2	comp:obj	_	_
+3	investisseurs	investisseur	NOUN	_	Gender=Masc|Number=Plur	2	comp	_	_
 4	qui	qui	PRON	_	PronType=Rel	8	subj	_	SpaceAfter=No
 5	,	,	PUNCT	_	_	4	punct	_	_
 6	auparavant	auparavant	ADV	_	_	8	mod	_	SpaceAfter=No
@@ -90,25 +90,25 @@ We use the features `Idiom` and `ExtPos` to consider the initial `ADV` as a `PRO
 9	d'	de	ADP	_	_	8	mod	_	SpaceAfter=No
 10	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	_
 11	mauvais	mauvais	ADJ	_	Gender=Masc|Number=Sing	12	mod	_	_
-12	œil	œil	NOUN	_	Gender=Masc|Number=Sing	9	comp:obj	_	_
+12	œil	œil	NOUN	_	Gender=Masc|Number=Sing	9	comp	_	_
 13	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	14	det	_	SpaceAfter=No
 14	accumulation	accumulation	NOUN	_	Gender=Fem|Number=Sing	8	comp:obj	_	_
 15	de	de	ADP	_	_	14	udep	_	_
-16	liquidités	liquidité	NOUN	_	Gender=Fem|Number=Plur	15	comp:obj	_	_
+16	liquidités	liquidité	NOUN	_	Gender=Fem|Number=Plur	15	comp	_	_
 17	par	par	ADP	_	_	14	udep	_	_
 18	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	19	det	_	_
-19	entreprises	entreprise	NOUN	_	Gender=Fem|Number=Plur	17	comp:obj	_	_
+19	entreprises	entreprise	NOUN	_	Gender=Fem|Number=Plur	17	comp	_	_
 20	reconnaissent	reconnaître	VERB	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 21	maintenant	maintenant	ADV	_	_	20	mod	_	_
 22	les	le	DET	_	Definite=Def|Number=Plur|PronType=Art	23	det	_	_
 23	avantages	avantage	NOUN	_	Gender=Masc|Number=Plur	20	comp:obj	_	_
 24	de	de	ADP	_	_	23	udep	_	_
 25	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	26	det	_	_
-26	constitution	constitution	NOUN	_	Gender=Fem|Number=Sing	24	comp:obj	_	_
+26	constitution	constitution	NOUN	_	Gender=Fem|Number=Sing	24	comp	_	_
 27	de	de	ADP	_	_	26	udep	_	_
-28	réserves	réserve	NOUN	_	Gender=Fem|Number=Plur	27	comp:obj	_	_
+28	réserves	réserve	NOUN	_	Gender=Fem|Number=Plur	27	comp	_	_
 29	de	de	ADP	_	_	28	udep	_	_
-30	liquidités	liquidité	NOUN	_	Gender=Fem|Number=Plur	29	comp:obj	_	_
+30	liquidités	liquidité	NOUN	_	Gender=Fem|Number=Plur	29	comp	_	_
 31	importantes	important	ADJ	_	Gender=Fem|Number=Plur	28	mod	_	SpaceAfter=No
 32	.	.	PUNCT	_	_	20	punct	_	_
 </conll>

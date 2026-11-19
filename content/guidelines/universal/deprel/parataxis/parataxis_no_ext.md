@@ -55,7 +55,7 @@ The `parataxis` relation is used to analyse two elements that are placed side by
 23	heures	heure	NOUN	_	Gender=Fem|Number=Plur	20	comp:obj	_	_
 24	pour	pour	ADP	_	_	20	mod	_	_
 25	nous	le	PRON	_	Number=Plur|Person=1|PronType=Prs	26	comp:obj	_	_
-26	soigner	soigner	VERB	_	VerbForm=Inf	24	comp:obj	_	SpaceAfter=No|Subject=SubjRaising
+26	soigner	soigner	VERB	_	VerbForm=Inf	24	comp	_	SpaceAfter=No|Subject=SubjRaising
 27	.	.	PUNCT	_	_	11	punct	_	_
 </conll>
 
