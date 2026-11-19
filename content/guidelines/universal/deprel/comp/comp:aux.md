@@ -18,18 +18,18 @@ It can be used with the following deep features:
 
 <conll>
 # lang = English
-1	Do	do	AUX	_	_	0	root	_	highlight=red
+1	Do	do	AUX	_	_	0	root	_	_
 2	you	you	PRON	_	_	1	subj	_	_
-3	remember	remember	VERB	_	_	1	comp:aux	_	highlight=red
+3	remember	remember	VERB	_	_	1	comp:aux	_	highlight_dep=red
 4	?	?	PUNCT	_	_	1	punct	_	_
 </conll>
 
 <conll>
 # lang = English
 1	It	it	PRON	_	_	2	subj	_	_
-2	had	had	AUX	_	_	0	root	_	highlight=red
+2	had	had	AUX	_	_	0	root	_	_
 3	nearly	nearly	ADV	_	_	4	mod	_	_
-4	stopped	stop	VERB	_	_	2	comp:aux	_	highlight=red
+4	stopped	stop	VERB	_	_	2	comp:aux	_	highlight_dep=red
 5	raining	rain	VERB	_	_	4	comp:pred	_	_
 6	.	.	PUNCT	_	_	2	punct	_	_
 </conll>
@@ -40,9 +40,9 @@ Multiple auxiliaries, such as those permitted in [English varieties spoken in th
 # lang = Southern American English
 # text_en = We might be able to go.
 1	We	we	PRON	_	_	2	subj	_	_
-2	might	may	AUX	_	_	0	root	_	highlight=red
-3	could	can	AUX	_	_	2	comp:aux	_	highlight=red
-4	go	go	VERB	_	_	3	comp:aux	_	highlight=red
+2	might	may	AUX	_	_	0	root	_	_
+3	could	can	AUX	_	_	2	comp:aux	_	highlight_dep=red
+4	go	go	VERB	_	_	3	comp:aux	_	highlight_dep=red
 5	.	.	PUNCT	_	_	2	punct	_	_
 </conll>
 
@@ -51,9 +51,9 @@ Multiple auxiliaries, such as those permitted in [English varieties spoken in th
 # text_en = I can't even sleep.
 1	I	I	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	3	subj	_	Gloss=I
 2	no	no	PART	_	Polarity=Neg	3	mod	_	Gloss=not
-3	dey	dey	AUX	_	Aspect=Imp	0	root	_	Gloss=IMPV|highlight=red
-4	fit	fit	AUX	_	Mood=Pot	3	comp:aux	_	Gloss=can|highlight=red
-5	sleep	sleep	VERB	_	_	4	comp:aux	_	Gloss=sleep|highlight=red
+3	dey	dey	AUX	_	Aspect=Imp	0	root	_	Gloss=IMPV
+4	fit	fit	AUX	_	Mood=Pot	3	comp:aux	_	Gloss=can|highlight_dep=red
+5	sleep	sleep	VERB	_	_	4	comp:aux	_	Gloss=sleep|highlight_dep=red
 </conll>
 
 <conll>
@@ -61,9 +61,9 @@ Multiple auxiliaries, such as those permitted in [English varieties spoken in th
 # text = Ak by som mal podobnú šancu, ja ju nepremrhám.
 # text_en = If I had a similar chance, I wouldn't waste it
 1	Ak	ak	SCONJ	_	_	10	mod	_	Gloss=if
-2	by	by	AUX	_	_	1	comp	_	Gloss=AUX.cond|highlight=red
-3	som	byť	AUX	_	_	2	comp:aux	_	Gloss=am|highlight=red
-4	mal	mať	VERB	_	_	3	comp:aux	_	Gloss=had|highlight=red
+2	by	by	AUX	_	_	1	comp	_	Gloss=AUX.cond
+3	som	byť	AUX	_	_	2	comp:aux	_	Gloss=am|highlight_dep=red
+4	mal	mať	VERB	_	_	3	comp:aux	_	Gloss=had|highlight_dep=red
 5	podobnú	podobný	ADJ	_	_	6	mod	_	Gloss=similar
 6	šancu	šanca	NOUN	_	_	4	comp:obj	_	Gloss=chance
 7	,	,	PUNCT	_	_	1	punct	_	_
@@ -79,10 +79,10 @@ Multiple auxiliaries, such as those permitted in [English varieties spoken in th
 1	Képp	képp	PRON	PRON	NounClass=Wol1|Number=Sing|Person=3|PronType=Tot	5	dislocated	_	Gloss=every_man
 2	ku	bu	PRON	PRON	NounClass=Wol1|Number=Sing|Person=3|PronType=Rel	3	subj	_	Gloss=who
 3	wuute	wuute	VERB	VERB	Mood=Ind|VerbForm=Fin	1	mod@relcl	_	Gloss=be_missing
-4	dees	di	AUX	AUX	Aspect=Imp|Mood=Ind|Person=0|Tense=Pres	5	comp:aux	_	Gloss=IMP.IPRS|highlight=red
-5	na	na	AUX	INFL	Aspect=Perf|Mood=Ind|Number=Sing|Person=3	0	root	_	Gloss=VFOC|highlight=red
+4	dees	di	AUX	AUX	Aspect=Imp|Mood=Ind|Person=0|Tense=Pres	5	comp:aux	_	Gloss=IMP.IPRS|highlight_dep=red
+5	na	na	AUX	INFL	Aspect=Perf|Mood=Ind|Number=Sing|Person=3	0	root	_	Gloss=VFOC
 6	la	ko	PRON	CL	Case=Acc|Number=Sing|Person=2|PronType=Prs	7	comp:obj	_	Gloss=O.2.SG
-7	mbugal	mbugal	VERB	VERB	Mood=Ind|VerbForm=Fin	4	comp:aux	_	Gloss=punish|highlight=red
+7	mbugal	mbugal	VERB	VERB	Mood=Ind|VerbForm=Fin	4	comp:aux	_	Gloss=punish|highlight_dep=red
 </conll>
 
 <conll>
@@ -91,10 +91,10 @@ Multiple auxiliaries, such as those permitted in [English varieties spoken in th
 1	Mit	Mit	ADP	APPR	AdpType=Prep|Case=Dat	4	udep	_	Gloss=with
 2	der	der	DET	ART	Case=Dat|Gender=Fem|Number=Sing|PronType=Art	3	det	_	Gloss=the
 3	Investorengruppe	Gruppe	NOUN	NN	Gender=Fem|Number=Sing|Person=3	1	comp	_	Gloss=investors_group
-4	sei	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Gloss=was (past)|highlight=red
+4	sei	sein	AUX	VAFIN	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Gloss=was (past)
 5	Stillschweigen	Schweigen	NOUN	NN	Gender=Neut|Number=Sing|Person=3	4	subj@pass	_	Gloss=non-disclosure
-6	vereinbart	vereinbaren	VERB	VVPP	Aspect=Perf|VerbForm=Part	7	comp:aux@pass	_	Gloss=agreed|highlight=red
-7	worden	werden	AUX	VAPP	Aspect=Perf|VerbForm=Part	4	comp:aux	_	Gloss=was (pass.)|highlight=red
+6	vereinbart	vereinbaren	VERB	VVPP	Aspect=Perf|VerbForm=Part	7	comp:aux@pass	_	Gloss=agreed|highlight_dep=red
+7	worden	werden	AUX	VAPP	Aspect=Perf|VerbForm=Part	4	comp:aux	_	Gloss=was (pass.)|highlight_dep=red
 8	.	.	PUNCT	.	PunctType=Peri	4	punct	_	Gloss=PUNCT
 </conll>
 

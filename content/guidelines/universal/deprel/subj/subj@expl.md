@@ -16,7 +16,7 @@ The `subj@expl` relation indicates that the subject is present to fill in an obl
 # lang = French
 # sent = Il pleut dans ma maison
 # text_en = It's raining in my house
-1	Il	il	PRON	_	_	2	subj@expl	_	Gloss=it
+1	Il	il	PRON	_	_	2	subj@expl	_	Gloss=it|highlight_dep=red
 2	pleut	pleuvoir	VERB	_	_	0	root	_	Gloss=rains
 3	dans	dans	ADP	_	_	2	mod	_	Gloss=in
 4	ma	son	DET	_	_	5	det	_	Gloss=my

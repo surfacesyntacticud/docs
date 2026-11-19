@@ -18,7 +18,7 @@ The `parataxis` relation is used to analyse two elements that are placed side by
 3	,	,	PUNCT	_	_	6	punct	_	_
 4	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	5	det	_	_
 5	site	site	NOUN	_	Number=Sing	6	subj	_	Gender[lex]=Masc
-6	vaut	valoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	_
+6	vaut	valoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	1	parataxis	_	highlight_dep=red
 7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	8	det	_	_
 8	voyage	voyage	NOUN	_	Number=Sing	6	comp:obj	_	Gender[lex]=Masc|SpaceAfter=No
 9	.	.	PUNCT	_	_	1	punct	_	_
@@ -35,12 +35,12 @@ The `parataxis` relation is used to analyse two elements that are placed side by
 3	,	,	PUNCT	_	_	2	punct	_	_
 4	vous	il	PRON	_	Number=Plur|Person=2|PronType=Prs	6	subj	_	_
 5	le	le	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	6	comp:obj	_	_
-6	connaissez	connaître	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	11	parataxis	_	highlight=red
+6	connaissez	connaître	VERB	_	Mood=Ind|Number=Plur|Person=2|Tense=Pres|VerbForm=Fin	11	parataxis	_	highlight_dep=red
 7	sûrement	sûrement	ADV	_	_	6	mod	_	SpaceAfter=No
 8	,	,	PUNCT	_	_	6	punct	_	_
 9	Jean	Jean	PROPN	_	Gender=Masc|Number=Sing	11	subj	_	_
 10	M	M	SYM	_	ExtPos=PROPN	9	mod	_	_
-11	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	|highlight=red
+11	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 12	toujours	toujours	ADV	_	_	11	mod	_	_
 13	dévoué	dévoué	ADJ	_	Gender=Masc|Number=Sing	11	comp:pred	_	SpaceAfter=No
 14	,	,	PUNCT	_	_	17	punct	_	_

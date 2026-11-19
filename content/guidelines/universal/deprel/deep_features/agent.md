@@ -24,7 +24,7 @@ Typical cases are passive, causative, and impersonal constructions.
 1	He	he	PRON	_	Case=Nom|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	subj@pass	_	_
 2	was	be	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Past|VerbForm=Fin	0	root	_	_
 3	interviewed	interview	VERB	_	Tense=Past|VerbForm=Part|Voice=Pass	2	comp:aux@pass	_	_
-4	by	by	ADP	_	_	3	comp:obl@agent	_	_
+4	by	by	ADP	_	_	3	comp:obl@agent	_	highlight_dep=red
 5	Wikinews	Wikinews	PROPN	_	Number=Sing	4	comp	_	_
 6	.	.	PUNCT	.	_	2	punct	_	_
 </conll>
@@ -38,7 +38,7 @@ Typical cases are passive, causative, and impersonal constructions.
 1	Il	lui	PRON	_	Emph=No|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	subj@expl	_	_
 2	existe	exister	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	des	un	DET	_	Definite=Ind|Number=Plur|PronType=Art	4	det	_	_
-4	variantes	variante	NOUN	_	Number=Plur	2	comp:obj@agent	_	Gender[lex]=Fem
+4	variantes	variante	NOUN	_	Number=Plur	2	comp:obj@agent	_	Gender[lex]=Fem|highlight_dep=red
 </conll>
 
 It makes sense to analyze the deep subject of an impersonal construction as `comp:obj` and not `subj`, because:
@@ -69,7 +69,7 @@ The demoted subject in French causatives can be `comp:obj` or `comp:obl`.
 2	fait	faire	AUX	_	_	0	root	_	Gloss=make
 3	accélérer	accélérer	VERB	_	_	2	comp:aux@caus	_	Gloss=accelerate
 4	ses	son	DET	_	_	5	det	_	Gloss=his
-5	troupes	troupe	NOUN	_	_	2	comp:obj@agent	_	Gloss=troops
+5	troupes	troupe	NOUN	_	_	2	comp:obj@agent	_	Gloss=troops|highlight_dep=red
 </conll>
 
 <conll>
@@ -77,7 +77,7 @@ The demoted subject in French causatives can be `comp:obj` or `comp:obl`.
 # text = Il nous fait manger une pizza
 # text_en = You're making us eat a pizza
 1	tu	il	PRON	_	Number=Sing|Person=2|PronType=Prs	3	subj@caus	_	Gloss=you
-2	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	3	comp:obl@agent	_	Gloss=us
+2	nous	lui	PRON	_	Number=Plur|Person=1|PronType=Prs	3	comp:obl@agent	_	Gloss=us|highlight_dep=red
 3	fais	faire	AUX	_	Mood=Ind|Number=Sing|Person=2|Tense=Pres|VerbForm=Fin	0	root	_	Gloss=make
 4	manger	manger	VERB	_	VerbForm=Inf	3	comp:aux@caus	_	Gloss=eat
 5	une	un	DET	_	_	6	det	_	Gloss=a

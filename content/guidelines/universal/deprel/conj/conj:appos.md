@@ -20,9 +20,9 @@ The secind conjunct in apposition forms a predication in the background: in *Mar
 # lang = French
 # text = Nietzsche le philosophe allemand parle de a une définition de l'art
 # text_en = Nietzsche the German philosopher speaks of has an art definition
-1	Nietzsche	Nietzsche	PROPN	_	_	5	subj	_	Gloss=Niezsche|highlight=red
+1	Nietzsche	Nietzsche	PROPN	_	_	5	subj	_	Gloss=Niezsche
 2	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	3	det	_	Gloss=the
-3	philosophe	philosophe	NOUN	_	Gender=Masc|Number=Sing	1	conj:appos	_	Gloss=philosopher|highlight=red
+3	philosophe	philosophe	NOUN	_	Gender=Masc|Number=Sing	1	conj:appos	_	Gloss=philosopher|highlight_dep=red
 4	allemand	allemand	ADJ	_	Gender=Masc|Number=Sing	3	mod	_	Gloss=German
 5	parle	parler	VERB	_	_	7	reparandum	_	Gloss=talks
 6	de	de	ADP	_	_	5	comp:obl	_	Gloss=about|Scrap=Yes
@@ -57,9 +57,9 @@ The secind conjunct in apposition forms a predication in the background: in *Mar
 6	{	{	PUNCT	_	_	9	punct	_	AlignBegin=169672|AlignEnd=169837|Gloss=PUNCT
 7	we	we	PRON	_	Number=Plur|Person=1|Poss=Yes	9	mod:poss	_	AlignBegin=169837|AlignEnd=170010|Gloss=PL.1.POSS
 8	Naija	Naija	PROPN	_	_	9	mod	_	AlignBegin=170010|AlignEnd=170438|Gloss=Naija
-9	rapper	rapper	NOUN	_	_	0	root	_	AlignBegin=170438|AlignEnd=170900|Gloss=rapper|highlight=red
+9	rapper	rapper	NOUN	_	_	0	root	_	AlignBegin=170438|AlignEnd=170900|Gloss=rapper
 10	|a	|a	PUNCT	_	_	11	punct	_	AlignBegin=170900|AlignEnd=171290|Gloss=PUNCT
-11	Eva	Eva	PROPN	_	_	9	conj:appos	_	AlignBegin=170900|AlignEnd=171290|Gloss=Eva|highlight=red
+11	Eva	Eva	PROPN	_	_	9	conj:appos	_	AlignBegin=170900|AlignEnd=171290|Gloss=Eva|highlight_dep=red
 12	Allordiah	Allordiah	PROPN	_	_	11	flat	_	AlignBegin=171290|AlignEnd=171800|Gloss=Allordiah
 13	}	}	PUNCT	_	_	9	punct	_	AlignBegin=171800|AlignEnd=171800|Gloss=PUNCT
 14	//	//	PUNCT	_	_	9	punct	_	AlignBegin=171770|AlignEnd=171800|Gloss=PUNCT

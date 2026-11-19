@@ -18,7 +18,7 @@ The `comp:cleft` relation is used in cleft sentences for the dependency from the
 2	was	be	AUX	_	_	0	root	_	_
 3	from	from	ADP	_	_	2	comp:pred	_	_
 4	John	John	PROPN	_	_	3	comp	_	_
-5	that	that	SCONJ	_	_	2	comp:cleft	_	_
+5	that	that	SCONJ	_	_	2	comp:cleft	_	highlight_dep=red
 6	she	she	PRON	_	_	7	subj	_	_
 7	heard	hear	VERB	_	_	5	comp	_	_
 8	the	the	DET	_	_	9	det	_	_
@@ -34,7 +34,7 @@ The `comp:cleft` relation is used in cleft sentences for the dependency from the
 3	alors	alors	ADV	_	_	2	mod	_	Gloss=so
 4	Alba	Alba	PROPN	_	_	2	comp:pred	_	Gloss=Alba
 5	qui	qui	PRON	_	PronType=Rel	6	subj	_	Gloss=who
-6	reprend	reprendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	comp:cleft	_	Gloss=retakes
+6	reprend	reprendre	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	2	comp:cleft	_	Gloss=retakes|highlight_dep=red
 7	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|Person=3|PronType=Art	8	det	_	Gloss=the
 8	contrôle	contrôle	NOUN	_	Gender=Masc|Number=Sing	6	comp:obj	_	Gloss=control
 9	de	de	ADP	_	_	8	udep	_	Gloss=of
@@ -53,8 +53,11 @@ The `comp:cleft` relation is used in cleft sentences for the dependency from the
 22	royale	royal	ADJ	_	Gender=Fem|Number=Sing	21	mod	_	Gloss=royal
 </conll>
 
+## Ambiguity with relative construction
+
 Sometimes, there is an ambiguity between a relative clause and a cleft clause.
-Consider the sentence *It is the electric car that I chose*.
+Consider the sentence 
+ - *It is the electric car that I chose*.
 
 If someone utters this sentence in a context where they must choose between a gasoline car and an electric car, the sentence is interpreted as a cleft sentence with the following annotation.
 
@@ -69,7 +72,7 @@ If someone utters this sentence in a context where they must choose between a ga
 5	car	car	NOUN	_	_	2	comp:pred	_	_
 6	that	that	PRON	_	_	8	comp:obj	_	_
 7	I	I	PRON	_	_	8	subj	_	_
-8	chose	choose	VERB	_	_	2	comp:cleft	_	_
+8	chose	choose	VERB	_	_	2	comp:cleft	_	highlight_dep=red
 </conll>
 
 But if the sentence is uttered in a context where the speaker is referring to one of several electric cars, the sentence is interpreted as having a relative clause with the following annotation.

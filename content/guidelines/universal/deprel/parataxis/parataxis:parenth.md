@@ -23,13 +23,13 @@ A parenthetical clause could form an independent sentence.
 4	paraître	paraître	VERB	CAUSATIVE	VerbForm=Inf	3	comp:aux@caus	_	Gloss=released
 5	ce	ce	DET	_	_	6	reparandum	_	Gloss=this
 6	ce	ce	DET	_	_	7	det	_	Gloss=this
-7	chef	chef	NOUN	_	ExtPos=NOUN	4	comp:obj	_	Idiom=Yes|Gloss=chief|highlight=red
+7	chef	chef	NOUN	_	ExtPos=NOUN	4	comp:obj	_	Idiom=Yes|Gloss=chief
 8	-d'	d'	ADP	_	_	7	unk	_	Gloss=of|InIdiom=Yes
 9	oeuvre	oeuvre	NOUN	_	_	8	unk	_	Gloss=art|InIdiom=Yes
 10	pour	pour	ADP	_	_	13	mod	_	Gloss=for
 11	moi	lui	PRON	_	Number=Sing|Person=1|PronType=Prs	10	comp	_	Gloss=me
 12	c'	ce	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Dem	13	subj	_	Gloss=it
-13	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	parataxis:parenth	_	Gloss=is|highlight=red
+13	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	7	parataxis:parenth	_	Gloss=is|highlight_dep=red
 14	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	15	det	_	Gloss=s
 15	chef	chef	NOUN	_	ExtPos=NOUN	13	comp:pred	_	Gloss=chief|Idiom=Yes
 16	-d'	de	ADP	_	_	15	unk	_	Gloss=of|InIdiom=Yes
@@ -55,7 +55,7 @@ A parenthetical clause could form an independent sentence.
 # text_ortho = From primary four (dat time, I even still dey seven years, ), one day, naim my papa just, my papa just come school.
 1	from	from	ADP	_	_	29	mod:periph	_	AlignBegin=58888|AlignEnd=59237|Gloss=from
 2	primary	primary	NOUN	_	_	1	comp	_	AlignBegin=59237|AlignEnd=59585|Gloss=primary
-3	four	four	NUM	_	NumType=Card	2	mod:num	_	AlignBegin=59585|AlignEnd=59934|Gloss=four.CARD|highlight=red
+3	four	four	NUM	_	NumType=Card	2	mod:num	_	AlignBegin=59585|AlignEnd=59934|Gloss=four.CARD
 4	(	(	PUNCT	_	_	11	punct	_	AlignBegin=59934|AlignEnd=59934|Gloss=PUNCT
 5	dat	dat	DET	_	Number=Sing|PronType=Dem	6	det	_	AlignBegin=59934|AlignEnd=60283|Gloss=SG.DEM
 6	time	time	NOUN	_	_	11	mod:periph	_	AlignBegin=60283|AlignEnd=60632|Gloss=time
@@ -63,7 +63,7 @@ A parenthetical clause could form an independent sentence.
 8	I	I	PRON	_	Case=Nom|Number=Sing|Person=1|PronType=Prs	11	subj	_	AlignBegin=60632|AlignEnd=60980|Gloss=NOM.SG.1
 9	even	even	ADV	_	_	11	mod	_	AlignBegin=60980|AlignEnd=61329|Gloss=even
 10	still	still	ADV	_	_	11	mod	_	AlignBegin=61329|AlignEnd=61678|Gloss=still
-11	dey	dey	VERB	_	VerbType=Cop	3	parataxis:parenth	_	AlignBegin=61678|AlignEnd=62027|Gloss=be2|highlight=red
+11	dey	dey	VERB	_	VerbType=Cop	3	parataxis:parenth	_	AlignBegin=61678|AlignEnd=62027|Gloss=be2|highlight_dep=red
 12	seven	seven	NUM	_	NumType=Card	13	det:num	_	AlignBegin=62027|AlignEnd=62375|Gloss=seven.CARD
 13	years	year	NOUN	_	Number=Plur	11	comp:pred	_	AlignBegin=62375|AlignEnd=62724|Gloss=year.PL
 14	//)	//)	PUNCT	_	_	11	punct	_	AlignBegin=62724|AlignEnd=62724|Gloss=PUNCT

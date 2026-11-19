@@ -25,21 +25,21 @@ It is analogous to [`conj`](https://universaldependencies.org/u/dep/conj.html) r
 5	changement	changement	NOUN	_	Gender=Masc|Number=Sing	3	comp:obj	_	Gloss=change
 6	et	et	CCONJ	_	_	8	cc	_	Gloss=and
 7	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	8	det	_	Gloss=the
-8	cohésion	cohésion	NOUN	_	Gender=Fem|Number=Sing	5	conj:coord	_	Gloss=cohesion
+8	cohésion	cohésion	NOUN	_	Gender=Fem|Number=Sing	5	conj:coord	_	Gloss=cohesion|highlight_dep=red
 9	sociale	social	ADJ	_	Gender=Fem|Number=Sing	8	mod	_	Gloss=social
 10	l'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	11	det	_	Gloss=the
-11	esprit	esprit	NOUN	_	Gender=Masc|Number=Sing	8	conj:coord	_	Gloss=spirit
+11	esprit	esprit	NOUN	_	Gender=Masc|Number=Sing	8	conj:coord	_	Gloss=spirit|highlight_dep=red
 12	d'	de	ADP	_	_	11	udep	_	Gloss=of
 13	initiative	initiative	NOUN	_	Gender=Fem|Number=Sing	12	comp	_	Gloss=initiative
 14	et	et	CCONJ	_	_	16	cc	_	Gloss=and
 15	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	16	det	_	Gloss=the
-16	sécurité	sécurité	NOUN	_	Gender=Fem|Number=Sing	11	conj:coord	_	Gloss=security
+16	sécurité	sécurité	NOUN	_	Gender=Fem|Number=Sing	11	conj:coord	_	Gloss=security|highlight_dep=red
 17	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	18	det	_	Gloss=the
-18	modernité	modernité	NOUN	_	Gender=Fem|Number=Sing	16	conj:coord	_	Gloss=modernity
+18	modernité	modernité	NOUN	_	Gender=Fem|Number=Sing	16	conj:coord	_	Gloss=modernity|highlight_dep=red
 19	et	et	CCONJ	_	_	22	cc	_	Gloss=and
 20	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	22	det	_	Gloss=the
 21	bien	bien	ADV	_	_	22	mod	_	Gloss=well
-22	vivre	vivre	VERB	_	VerbForm=Inf	18	conj:coord	_	Gloss=living
+22	vivre	vivre	VERB	_	VerbForm=Inf	18	conj:coord	_	Gloss=living|highlight_dep=red
 23	ensemble	ensemble	ADV	_	_	22	mod	_	Gloss=together
 </conll>
 
@@ -63,11 +63,11 @@ It is analogous to [`conj`](https://universaldependencies.org/u/dep/conj.html) r
 10	{	{	PUNCT	_	_	11	punct	_	AlignBegin=229960|AlignEnd=229960|Gloss=PUNCT
 11	Instagram	Instagram	PROPN	_	_	9	comp	_	AlignBegin=229960|AlignEnd=230358|Gloss=Instagram
 12	|c	|c	PUNCT	_	_	13	punct	_	AlignBegin=230358|AlignEnd=230358|Gloss=PUNCT
-13	Facebook	Facebook	PROPN	_	_	11	conj:coord	_	AlignBegin=230358|AlignEnd=230756|Gloss=Facebook
+13	Facebook	Facebook	PROPN	_	_	11	conj:coord	_	AlignBegin=230358|AlignEnd=230756|Gloss=Facebook|highlight_dep=red
 14	|c	|c	PUNCT	_	_	15	punct	_	AlignBegin=230756|AlignEnd=230756|Gloss=PUNCT
-15	Whatsapp	WhatsApp	PROPN	_	_	13	conj:coord	_	AlignBegin=230756|AlignEnd=231154|Gloss=WhatsApp
+15	Whatsapp	WhatsApp	PROPN	_	_	13	conj:coord	_	AlignBegin=230756|AlignEnd=231154|Gloss=WhatsApp|highlight_dep=red
 16	|c	|c	PUNCT	_	_	17	punct	_	AlignBegin=231154|AlignEnd=231154|Gloss=PUNCT
-17	Everywhere	everywhere	ADV	_	_	15	conj:coord	_	AlignBegin=231154|AlignEnd=231552|Gloss=everywhere
+17	Everywhere	everywhere	ADV	_	_	15	conj:coord	_	AlignBegin=231154|AlignEnd=231552|Gloss=everywhere|highlight_dep=red
 18	}	}	PUNCT	_	_	11	punct	_	AlignBegin=231552|AlignEnd=231552|Gloss=PUNCT
 19	//	//	PUNCT	_	_	5	punct	_	AlignBegin=231552|AlignEnd=231552|Gloss=PUNCT
 </conll>
@@ -101,10 +101,10 @@ The relation can be used with the deep extension [`emb`](guidelines/deep_feature
 18	accourt	accourir	VERB	_	Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	0	root	_	Person[ctxt]=3|SpaceAfter=No|WordAlignmentBegin=150200|WordAlignmentEnd=150390
 19	,	,	PUNCT	_	_	18	punct	_	WordAlignmentBegin=150390|WordAlignmentEnd=150390
 20	il	lui	PRON	_	Case=Nom|Emph=No|Gender=Masc|Number=Sing|PronType=Prs	21	subj	_	Person[lex]=3|WordAlignmentBegin=150390|WordAlignmentEnd=150581
-21	accourt	accourir	VERB	_	Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	18	conj:coord	_	Person[ctxt]=3|SpaceAfter=No|WordAlignmentBegin=150581|WordAlignmentEnd=150771
+21	accourt	accourir	VERB	_	Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	18	conj:coord	_	Person[ctxt]=3|SpaceAfter=No|WordAlignmentBegin=150581|WordAlignmentEnd=150771|highlight_dep=red
 22	,	,	PUNCT	_	_	21	punct	_	WordAlignmentBegin=150771|WordAlignmentEnd=150771
 23	il	lui	PRON	_	Case=Nom|Emph=No|Gender=Masc|Number=Sing|PronType=Prs	24	subj	_	Person[lex]=3|WordAlignmentBegin=150771|WordAlignmentEnd=150961
-24	accourt	accourir	VERB	_	Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	21	conj:coord	_	Person[ctxt]=3|SpaceAfter=No|WordAlignmentBegin=150961|WordAlignmentEnd=151151
+24	accourt	accourir	VERB	_	Mood=Ind|Number=Sing|Tense=Pres|VerbForm=Fin	21	conj:coord	_	Person[ctxt]=3|SpaceAfter=No|WordAlignmentBegin=150961|WordAlignmentEnd=151151|highlight_dep=red
 25	.	.	PUNCT	_	_	18	punct	_	WordAlignmentBegin=151151|WordAlignmentEnd=151151 
 </conll>
 

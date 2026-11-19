@@ -20,7 +20,7 @@ In English, `comp:pred` can be introduced by the copula *to be*
 # lang = English
 1	I	I	PRON	_	_	2	subj	_	_
 2	was	be	AUX	_	_	0	root	_	_
-3	thirteen	thirteen	NUM	_	_	2	comp:pred	_	_
+3	thirteen	thirteen	NUM	_	_	2	comp:pred	_	highlight_dep=red
 </conll>
 
 In French, `comp:pred` can be introduced by the copula *être*
@@ -32,7 +32,7 @@ In French, `comp:pred` can be introduced by the copula *être*
 1	L'	le	DET	_	Definite=Def|Number=Sing|PronType=Art	2	det	_	SpaceAfter=No
 2	utilisation	utilisation	NOUN	_	Gender=Fem|Number=Sing	3	subj	_	_
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-4	intuitive	intuitif	ADJ	_	Gender=Fem|Number=Sing	3	comp:pred	_	SpaceAfter=No
+4	intuitive	intuitif	ADJ	_	Gender=Fem|Number=Sing	3	comp:pred	_	SpaceAfter=No|highlight_dep=red
 </conll>
 
 ### `comp:pred` introduced by a verb
@@ -48,7 +48,7 @@ pattern { X -[comp:pred]-> Y; X [upos=VERB] }
 2	had	have	AUX	_	_	0	root	_	_
 3	become	become	VERB	_	_	2	comp:aux	_	_
 4	completely	completely	ADV	_	_	5	mod	_	_
-5	disgruntled	disgruntled	ADJ	_	_	3	comp:pred	_	_
+5	disgruntled	disgruntled	ADJ	_	_	3	comp:pred	_	highlight_dep=red
 </conll>
 
 <conll>
@@ -56,7 +56,7 @@ pattern { X -[comp:pred]-> Y; X [upos=VERB] }
 1	Prague	Prague	PROPN	_	_	2	subj	_	_
 2	s	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	considered	consider	VERB	VBN	Tense=Past|VerbForm=Part	2	comp:aux@pass	_	_
-4	to	to	PART	TO	_	3	comp:pred	_	_
+4	to	to	PART	TO	_	3	comp:pred	_	highlight_dep=red
 5	be	be	AUX	VB	VerbForm=Inf	4	comp	_	_
 6	one	one	NUM	CD	NumType=Card	5	comp:pred	_	_
 7	of	of	ADP	IN	_	6	udep	_	_
@@ -77,7 +77,7 @@ pattern { X -[comp:pred]-> Y; X [upos=VERB] }
 2	Sud	sud	NOUN	_	Gender=Masc|Number=Sing	3	subj@pass	_	Gloss=south
 3	est	être	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Gloss=is
 4	considéré	considérer	VERB	_	Gender=Masc|Number=Sing|Tense=Past|VerbForm=Part	3	comp:aux@pass	_	Gloss=considered
-5	comme	comme	ADP	_	_	4	comp:pred	_	Gloss=as
+5	comme	comme	ADP	_	_	4	comp:pred	_	Gloss=as|highlight_dep=red
 6	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|Person=3|PronType=Art	7	det	_	Gloss=a
 7	bassin	bassin	NOUN	_	Gender=Masc|Number=Sing	5	comp	_	Gloss=basin
 8	dynamique	dynamique	ADJ	_	Gender=Masc|Number=Sing	7	mod	_	Gloss=dynamic
@@ -105,7 +105,7 @@ pattern { X -[comp:pred]-> Y; X -[comp:obj]-> Z }
 1	Keep	keep	VERB	VB	Mood=Imp|Person=2|VerbForm=Fin	0	root	_	_
 2	your	your	PRON	PRP$	Case=Gen|Number=Sing|Person=2|Poss=Yes|PronType=Prs	3	mod@poss	_	_
 3	home	home	NOUN	NN	Number=Sing	1	comp:obj	_	_
-4	clean	clean	ADJ	JJ	Degree=Pos	1	comp:pred	_	SpaceAfter=No
+4	clean	clean	ADJ	JJ	Degree=Pos	1	comp:pred	_	SpaceAfter=No|highlight_dep=red
 5	.	.	PUNCT	.	_	1	punct	_	_
 </conll>
 
@@ -113,9 +113,9 @@ pattern { X -[comp:pred]-> Y; X -[comp:obj]-> Z }
 # lang = English
 1	Let	let	VERB	_	_	0	root	_	_
 2	them	them	PRON	_	_	1	comp:obj	_	_
-3	hear	hear	VERB	_	_	1	comp:pred	_	_
+3	hear	hear	VERB	_	_	1	comp:obl	_	_
 4	you	you	PRON	_	_	3	comp:obj	_	_
-5	shout	shout	VERB	_	_	3	comp:pred	_	_
+5	shout	shout	VERB	_	_	3	comp:pred	_	highlight_dep=red
 </conll>
 
 <conll>
@@ -128,7 +128,7 @@ pattern { X -[comp:pred]-> Y; X -[comp:obj]-> Z }
 3	cette	ce	DET	_	Gender=Fem|Number=Sing|Person=3|PronType=Dem	4	det	_	Gloss=this
 4	attitude	attitude	NOUN	_	Gender=Fem|Number=Sing	2	comp:obj	_	Gloss=attitude
 5	totalement	totalement	ADV	_	_	6	mod	_	Gloss=totally
-6	inadmissible	inadmissible	ADJ	_	Number=Sing	2	comp:pred	_	Gloss=unacceptable
+6	inadmissible	inadmissible	ADJ	_	Number=Sing	2	comp:pred	_	Gloss=unacceptable|highlight_dep=red
 7	!	!	PUNCT	_	_	2	punct	_	Gloss=!
 </conll>
 
@@ -149,7 +149,7 @@ pattern { X -[comp:pred]-> Y; Y[upos=SCONJ] }
 2	short	short	ADJ	JJ	Degree=Pos	3	mod	_	_
 3	answer	answer	NOUN	NN	Number=Sing	4	subj	_	_
 4	is	be	AUX	VBZ	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-5	that	that	SCONJ	IN	_	4	comp:pred	_	_
+5	that	that	SCONJ	IN	_	4	comp:pred	_	highlight_dep=red
 6	we	we	PRON	PRP	Case=Nom|Number=Plur|Person=1|PronType=Prs	7	subj	_	_
 7-8	don't	_	_	_	_	_	_	_	_
 7	do	do	AUX	VBP	Mood=Ind|Number=Plur|Person=1|Tense=Pres|VerbForm=Fin	5	comp	_	_
@@ -167,7 +167,7 @@ pattern { X -[comp:pred]-> Y; Y[upos=SCONJ] }
 2	la	the	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	3	det	_	Gloss=the
 3	réalité	reality	NOUN	_	Gender=Fem|Number=Sing	4	subj	_	Gloss=reality
 4	est	is	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	Gloss=is
-5	que	that	SCONJ	_	_	4	comp:pred	_	_
+5	que	that	SCONJ	_	_	4	comp:pred	_	highlight_dep=red
 6	la	the	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	7	det	_	_
 7	Mauritanie	Mauritania	PROPN	_	_	9	subj	_	_
 8	n'	not	ADV	_	Polarity=Neg	9	mod	_	SpaceAfter=No

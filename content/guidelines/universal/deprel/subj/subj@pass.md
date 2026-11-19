@@ -16,7 +16,7 @@ This can be used for both standard passive constructions, and for mediopassive c
 <conll>
 # lang = English
 # text = This shall be applauded
-1	This	this	PRON	DT	Number=Sing|PronType=Dem	2	subj@pass	_	Entity=(event-70)
+1	This	this	PRON	DT	Number=Sing|PronType=Dem	2	subj@pass	_	Entity=(event-70)|highlight_dep=red
 2	shall	shall	AUX	MD	VerbForm=Fin	0	root	_	_
 3	be	be	AUX	VB	VerbForm=Inf	2	comp:aux	_	_
 4	applauded	applaud	VERB	VBD	Mood=Ind|Tense=Past|VerbForm=Fin	3	comp:aux@pass	_	_
@@ -26,11 +26,11 @@ This can be used for both standard passive constructions, and for mediopassive c
 # lang = French
 # text = Il fut bâti en 1998.
 # text_en = It was build in 1998.
-1	Il	il	PRON	_	_	2	subj@pass	_	Gloss=It
+1	Il	il	PRON	_	_	2	subj@pass	_	Gloss=It|highlight_dep=red
 2	fut	être	AUX	_	_	0	root	_	Gloss=was
 3	bâti	bâtir	VERB	_	_	2	comp:aux@pass	_	Gloss=built
 4	en	en	ADP	_	_	2	mod	_	Gloss=in
-5	1998	1998	NUM	_	_	4	comp:obj	_	Gloss=1998
+5	1998	1998	NUM	_	_	4	comp	_	Gloss=1998
 </conll>
 
 The `subj@pass` is also used for subject in mediopassive constructions.
@@ -39,7 +39,7 @@ The `subj@pass` is also used for subject in mediopassive constructions.
 # Lang = Czech
 # text = počet zaměstnanců se snížil
 # text_en = the number of employees decreased
-1	počet	počet	NOUN	_	_	4	subj@pass	_	Gloss=number
+1	počet	počet	NOUN	_	_	4	subj@pass	_	Gloss=number|highlight_dep=red
 2	zaměstnanců	zaměstnanec	NOUN	_	_	1	mod	_	Gloss=employees.PL.GEN
 3	se	se	PRON	_	_	4	comp@pass	_	Gloss=itself
 4	snížil	snížit	VERB	_	_	0	root	_	Gloss=decrease
@@ -50,7 +50,7 @@ The `subj@pass` is also used for subject in mediopassive constructions.
 # text = le livre se vend bien
 # text_en = the book is selling well
 1	le	le	DET	_	_	2	det	_	Gloss=the
-2	livre	livre	NOUN	_	_	4	subj@pass	_	Gloss=book
+2	livre	livre	NOUN	_	_	4	subj@pass	_	Gloss=book|highlight_dep=red
 3	se	se	PRON	_	_	4	comp@pass	_	Gloss=itself
 4	vend	vendre	VERB	_	_	0	root	_	Gloss=sell
 5	bien	bien	ADV	_	_	4	mod	_	Gloss=well
@@ -60,7 +60,7 @@ The `subj@pass` is also used for subject in mediopassive constructions.
 # lang = Russian
 # text = книга хорошо продаётся
 # text_en = the book is selling well
-1	книга	книга	NOUN	_	_	3	subj@pass	_	Gloss=book
+1	книга	книга	NOUN	_	_	3	subj@pass	_	Gloss=book|highlight_dep=red
 2	хорошо	хорошо	ADV	_	_	3	mod	_	Gloss=well
 3	продаётся	продаваться	VERB	_	_	0	root	_	Gloss=is selling
 </conll>
