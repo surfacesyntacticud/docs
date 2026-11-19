@@ -14,7 +14,7 @@ For this, `conll` code can directly be embedded in the page by adding using the 
 
 > [!warning]
 > For a proper rendering, one empty line should be added before the `<conll>` tag!
-> The code below, for instance, will not disaplay the examples correctly.
+> The code below, for instance, will not display the examples correctly.
 ```
 Some text on the line before the tag is not allowed.
 <conll>

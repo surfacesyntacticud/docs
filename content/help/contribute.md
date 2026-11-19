@@ -37,14 +37,14 @@ See [Prerequisites](https://quartz.jzhao.xyz/getting-started/#prerequisites) rel
 The first time you start working on the guidelines, you have to run in a terminal:
 
 ```shell
-git clone TODO # this will create a repository `docs` where you can work
+git clone git@github.com:surfacesyntacticud/docs.git # this will create a repository `docs` where you can work
 cd docs
 npm i # to install some node related stuff
 cd external-plugins && npm run build && cd - # For installation of specific plugings
 npx quartz build --serve # starting the local SUD documentation
 ```
 
-The documentation is then available on http://localhost:8081 and is updated each time you save a file.
+The documentation is then available on http://localhost:8081 and is updated dynamically each time you save a file.
 
 ### Next editions
 If the repo is already cloned, you just have to go again in the same folder `docs` and run
