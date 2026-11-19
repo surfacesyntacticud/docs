@@ -1,7 +1,7 @@
 import type { VNode } from "preact"
 
 type PageFileData = {
-  relativePath?: string
+  relativePath: string
   slug?: string
   frontmatter?: {
     status?: unknown
@@ -20,31 +20,20 @@ type QuartzComponentProps = {
 
 type QuartzComponent = ((props: QuartzComponentProps) => VNode | null) & {
   css?: string
+  afterDOMLoaded?: string
 }
 
 type QuartzComponentConstructor = (_opts?: undefined) => QuartzComponent
-
-type Treebank = {
-  id: string
-  schema: string
-  lang: string
-  audio?: boolean
-}
 
 type Scope = {
   langs: string[]
   schemas: string[]
 }
 
-const sud: Treebank[] = []
-let tbs = require("../../data/mSUD_2.18.json") as Treebank[]
-sud.push(...tbs)
-tbs = require("../../data/pSUD_2.18.json") as Treebank[]
-sud.push(...tbs)
-tbs = require("../../data/SUD_2.18_native.json") as Treebank[]
-sud.push(...tbs)
-tbs = require("../../data/SUD_2.18_converted.json") as Treebank[]
-sud.push(...tbs)
+const response = await fetch("https://grew.fr/download/SUD_2.19_count.json")
+if (!response.ok) throw new Error(`HTTP ${response.status}`)
+const pebbles_count = await response.json()
+
 
 function grewMatchPath(treebank: string, request: string): string {
   request = request.replace(/\n/g, "%0A")
@@ -85,14 +74,6 @@ function scopeToStrings(scope: Scope): string[] {
   }
 
   return parts
-}
-
-function filterScope(scope: Scope): Treebank[] {
-  return sud.filter((treebank) => {
-    const languageMatches = scope.langs.length === 0 || scope.langs.includes(treebank.lang)
-    const schemaMatches = scope.schemas.length === 0 || scope.schemas.includes(treebank.schema)
-    return languageMatches && schemaMatches
-  })
 }
 
 const PageEdit: QuartzComponent = ({ fileData }) => {
@@ -164,6 +145,19 @@ const Request: QuartzComponent = ({ fileData }) => {
   const request = fileData.frontmatter?.request
   const scope = buildScope(fileData.frontmatter)
 
+  const count_by_corpora : Record<string, number> =
+    (fileData.relativePath in pebbles_count.pebbles)
+      ? pebbles_count.pebbles[fileData.relativePath]["count"]
+      : {}
+  const corpora_nb = Object.keys(count_by_corpora).length
+
+  const sorted_relevant : [string, number][] =
+    Object.entries(count_by_corpora)
+    .filter(([, value]) => value !== 0)
+    .sort(([, valueA], [, valueB]) => valueB - valueA);
+  const relevant_corpora_nb = sorted_relevant.length
+
+
   let badge = ""
   switch (type) {
     case "valid":
@@ -182,8 +176,6 @@ const Request: QuartzComponent = ({ fileData }) => {
     )
   }
 
-  const filteredTreebanks = filterScope(scope)
-
   return (
     <div>
       <h3 class="badge">{badge}</h3>
@@ -192,38 +184,28 @@ const Request: QuartzComponent = ({ fileData }) => {
           <li key={value}>{value}</li>
         ))}
       </ul>
+
       <pre>
         <code class="language-grew">{request}</code>
       </pre>
-      <br />
-      {filteredTreebanks.length} treebank{filteredTreebanks.length > 1 ? "s" : ""}
-      <br />
-      <br />
-      {filteredTreebanks.length > 5 ? (
-        <select
-          class="tb-dropdown"
-          defaultValue=""
-          {...({ onchange: "if(this.value) window.open(this.value,'_blank')" } as Record<string, string>)}
-        >
-          <option value="" disabled>
-            Select treebank...
-          </option>
-          {filteredTreebanks.map((treebank) => (
-            <option key={treebank.id} value={grewMatchPath(treebank.id, request)}>
-              {treebank.id}
-            </option>
-          ))}
-        </select>
-      ) : (
-        filteredTreebanks.map((treebank) => (
-          <span key={treebank.id}>
-            <a class="tb" target="_blank" rel="noreferrer" href={grewMatchPath(treebank.id, request)}>
-              {treebank.id}
-            </a>
-          </span>
-        ))
-      )}
-      <hr />
+
+      <button type="button" class="collapsible">
+      The request is found in {(100*relevant_corpora_nb/corpora_nb).toFixed(2)}% of the corpora
+      ({relevant_corpora_nb} out of {corpora_nb})
+      </button>
+
+      <div class="treebanks">
+        {
+          sorted_relevant.map(([key, value]) => (
+            <span class="tb-button">
+              <a class="tb" target="_blank" rel="noreferrer" href={grewMatchPath(key, request)}>
+                {key}
+                <span class="count">{value}</span>
+              </a>
+            </span>
+          ))
+        }
+      </div>
     </div>
   )
 }
@@ -244,16 +226,78 @@ Request.css = `
   text-align: center;
   border-radius: 5px;
 }
+.tb-button {
+  display: inline-block;
+  margin: 2px;
+}
 .tb {
-  background-color: #5d916a;
+  display: inline-block;
+  background-color: #a2e3b3;
   font-size: x-small;
-  margin: 5px;
+  color: black;
+  padding: 8px;
+  text-align: center;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+.count {
+  background-color: black;
+  color: white;
+  padding: 2px 6px;
+  text-align: center;
+  border-radius: 5px;
+  margin-left: 6px;
+}
+.collapsible {
+  background-color: #6ab2b5;
   color: white;
   padding: 4px 8px;
   text-align: center;
   border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+.collapsible:after {
+  content: '+';
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+.collapsible.active:after {
+  content: "-";
+}
+.collapsible:hover {
+  background-color: #4f989b;
+}
+
+.treebanks {
+  padding: 0 18px;
+  overflow: hidden;
+  display: none;
+  background-color: #f1f1f1;
 }
 `
+
+Request.afterDOMLoaded = `
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+} `
+
+
 const SudLogo: QuartzComponent = ({ fileData }) => {
   const slug = fileData.slug ?? ""
   const segments = slug.split("/").filter(Boolean)

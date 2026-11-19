@@ -271,7 +271,7 @@ plugins:
     order: 50
     layout:
       position: beforeBody
-      priority: 25
+      priority: 12
   - source:
       repo: ./external-plugins
       name: Status
