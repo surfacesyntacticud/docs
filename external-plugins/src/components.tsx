@@ -30,7 +30,10 @@ type Scope = {
   schemas: string[]
 }
 
-const pebbles_count = require("../../data/count.json")
+const response = await fetch("https://grew.fr/download/SUD_2.19_count.json")
+if (!response.ok) throw new Error(`HTTP ${response.status}`)
+const pebbles_count = await response.json()
+
 
 function grewMatchPath(treebank: string, request: string): string {
   request = request.replace(/\n/g, "%0A")
