@@ -31,7 +31,7 @@ SUD annotations for some languages, such as French, do not use the `compound` re
 
 Naija in particular makes heavy use of this relation, which is used to link nouns to virtually any other nouns which play a modifying role.
 However, it is also used to annotate phrasal verbs as well as a more limited subset of relations between nouns and adjectives, such as *dry cleaner*, which are considered fixed expressions whose meaning cannot be directly understood from its constituent parts.
-For more information, see @@@ [Naija's page](../../../../language/naija/syntax/compound_phrasal_verbs).
+For more information, see [Naija's page](guidelines/language_specific/pcm/syntax/compound_phrasal_verbs).
 
 In many cases, the existence of a `compound` relation can be determined with a series of linguistic tests.
 For example, it might be impossible to insert an adjective between two elements of a compound.

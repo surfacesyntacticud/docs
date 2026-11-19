@@ -13,7 +13,7 @@ In SUD, the `comp` relation is used for many sort of complement.
 > [!hint]
 > [Table of all SUD deprel with `comp` as main rel](https://tables.grew.fr/?data=sud_deps/DEPS&cols=^comp(@.*|:.*)?$)
 
-The `comp` is used without extension: see [`comp`](./comp.md):
+The `comp` is used without extension: see [`comp`](./comp_no_ext.md):
  - for complements of `ADP` or `SCONJ`
  - for a few other complements
 

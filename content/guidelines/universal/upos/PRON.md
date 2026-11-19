@@ -15,5 +15,5 @@ It is used to tag prounouns.
 > See also [UD related page](https://universaldependencies.org/u/pos/PRON.html) for `PRON` pos tag.
 
 ## Features
- - The upos PRON is very often associated to the feature @@@[`PronType`](feat-PronType) and the feature @@@[`Reflex`](feat-Reflex)
+ - The upos PRON is very often associated to the feature [`PronType`](https://universaldependencies.org/u/feat/PronType.html) and the feature [`Reflex`](https://universaldependencies.org/u/feat/Reflex.html).
 

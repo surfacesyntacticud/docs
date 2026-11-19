@@ -13,7 +13,7 @@ The `udep` relation is used for complements when one does not wish to or is unab
  
 The governor and the dependent of a `udep` relation can have any POS. The `udep` relation is frequently given to the complements of nouns, since it is generally more difficult to distinguish between arguments and modifiers for nouns than it is for verbs.
 
-As shown in the @@@ [correspondences between SUD and UD](../../../../_index.md#correspondences-between-ud-and-sud), the `udep` label is used while automatically converting an [`obl`](https://universaldependencies.org/u/dep/obl.html) label from a UD annotation.
+As shown in the [correspondences between SUD and UD](https://surfacesyntacticud.org/conversions/), the `udep` label is used while automatically converting an [`obl`](https://universaldependencies.org/u/dep/obl.html) label from a UD annotation.
 This is because `obl` in UD can correspond to both [`comp:obl`](guidelines/universal/deprel/comp/comp:obj) and [`mod`](guidelines/universal/deprel/mod) in SUD.
 
 <conll>

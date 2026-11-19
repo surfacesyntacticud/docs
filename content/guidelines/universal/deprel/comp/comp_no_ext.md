@@ -237,5 +237,5 @@ We can also have the deep syntactic feature [`@expl`](guidelines/universal/depre
 </conll>
 
 
-More information can be found on the French [pronomional verb](@@@../../../language/French/syntax/french_pronominal_verb.md) page or on the page about the annotation of the idiom [*il y a*](@@@../../../language/French/syntax/il_y_a.md).
+More information can be found on the French [pronomional verb](guidelines/language_specific/fr/syntax/french_pronominal_verb) page or on the page about the annotation of the idiom [*il y a*](guidelines/language_specific/fr/syntax/il_y_a).
 

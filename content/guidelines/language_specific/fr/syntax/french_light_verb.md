@@ -4,16 +4,16 @@ scope:
   schema: SUD
   lang: fr
 type: doc
-status: "DRAFT: to be revised"
 ---
 
 # Complement of light verb construction
 
-The complement of the noun light-verb construction is attached to the noun if it can be considered independently of verb, otherwise it is attached to verb.
+The complement of the noun in a light verb construction is attached to the noun if it can be considered independently of verb, otherwise it is attached to verb.
 
 Examples : 
-- j'ai peur de mourir (I'm afraid to die) - la peur de mourir me hante (the fear of dying haunts me)
-peur -[comp:obl]-> de
+ - *j'ai peur de mourir* (*I'm afraid to die*) 
+   - *la peur de mourir me hante* (*the fear of dying haunts me*)
+   - &rarr; *de mourir* is attached to *peur*
 
 <conll>
 # text = j'avais la réputation d'être très doué.
@@ -21,26 +21,27 @@ peur -[comp:obl]-> de
 2	avais	avoir	VERB	_	Mood=Ind|Number=Sing|Person=1|Tense=Imp|VerbForm=Fin	0	root	_	_
 3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
 4	réputation	réputation	NOUN	_	Gender=Fem|Number=Sing	2	comp:obj@lvc	_	_
-5	d'	de	ADP	_	_	4	comp:obl	_	SpaceAfter=No
-6	être	être	AUX	_	VerbForm=Inf	5	comp:obj	_	Subject=SubjRaising
+5	d'	de	ADP	_	_	4	comp:obl	_	SpaceAfter=No|highlight_dep=red
+6	être	être	AUX	_	VerbForm=Inf	5	comp	_	Subject=SubjRaising
 7	très	très	ADV	_	_	8	mod	_	_
 8	doué	doué	ADJ	_	Gender=Masc|Number=Sing	6	comp:pred	_	SpaceAfter=No
 9	.	.	PUNCT	_	_	2	punct	_	_
 </conll>
 
-- Je me rends compte de mon erreur (I realize my mistake )
-rends -[comp:obl]-> de
+ - *Je me rends compte de mon erreur* (*I realize my mistake*)
+   - ★ *le compte de mon erreur*
+   - &rarr; *de mon erreur* is attached to *rends*
 
 <conll>
 # text = Il fait partie de la section de Nobressart.
 1	Il	lui	PRON	_	Emph=No|Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	subj	_	_
 2	fait	faire	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
 3	partie	partie	NOUN	_	Gender=Fem|Number=Sing	2	comp:obj@lvc	_	_
-4	de	de	ADP	_	_	2	comp:obl	_	_
+4	de	de	ADP	_	_	2	comp:obl	_	highlight_dep=red
 5	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	6	det	_	_
-6	section	section	NOUN	_	Gender=Fem|Number=Sing	4	comp:obj	_	_
+6	section	section	NOUN	_	Gender=Fem|Number=Sing	4	comp	_	_
 7	de	de	ADP	_	_	6	udep	_	_
-8	Nobressart	Nobressart	PROPN	_	_	7	comp:obj	_	SpaceAfter=No
+8	Nobressart	Nobressart	PROPN	_	_	7	comp	_	SpaceAfter=No
 9	.	.	PUNCT	_	_	2	punct	_	_
 </conll>
 
