@@ -24,7 +24,7 @@ In SUD, the classifiers is the head of the classifier phrase, because, generally
 5	40	40	NUM	CD	NumType=Card	6	mod	_	LTranslit=40|SpaceAfter=No|Translit=40|Gloss=40
 6	間	間	NOUN	NNB	_	7	mod:clf	_	LTranslit=jiān|SpaceAfter=No|Translit=jiān|Gloss=CLF
 7	房屋	房屋	NOUN	NN	_	3	obj	_	LTranslit=fángwū|SpaceAfter=No|Translit=fángwū|Gloss=home
-<\conll>
+</conll>
 
 SUD `mod:clf` relation corresponds to UD `clf` relation in the reverse direction:
 
@@ -40,5 +40,5 @@ SUD `mod:clf` relation corresponds to UD `clf` relation in the reverse direction
 5	40	40	NUM	CD	NumType=Card	7	nummod	_	LTranslit=40|SpaceAfter=No|Translit=40|Gloss=40
 6	間	間	NOUN	NNB	_	5	clf	_	LTranslit=jiān|SpaceAfter=No|Translit=jiān|Gloss=CLF
 7	房屋	房屋	NOUN	NN	_	3	obj	_	LTranslit=fángwū|SpaceAfter=No|Translit=fángwū|Gloss=home
-<\conll>
+</conll>
 
