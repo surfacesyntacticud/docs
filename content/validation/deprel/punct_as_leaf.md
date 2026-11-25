@@ -24,4 +24,4 @@ The `punct` deprel should end with a leaf, with a few exceptions for notation li
 5	(	(	PUNCT	_	_	6	punct	_	SpaceAfter=No
 6	...	...	PUNCT	_	_	2	punct	_	SpaceAfter=No
 7	)	)	PUNCT	_	_	6	punct	_	_
-<conll>
+</conll>

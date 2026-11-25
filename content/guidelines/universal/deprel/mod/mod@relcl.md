@@ -10,7 +10,7 @@ tags:
 
 # Relative clauses
 
-The `mod@relcl` relation is used for relative clauses (see [`@relcl`](guidelines/deep_features/relcl.md)).
+The `mod@relcl` relation is used for relative clauses (see [`@relcl`](guidelines/universal/deprel/deep_features/relcl)).
 
 <conll>
 # lang = English
