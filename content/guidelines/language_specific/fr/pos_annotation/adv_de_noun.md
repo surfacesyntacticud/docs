@@ -4,23 +4,20 @@ scope:
   schema: SUD
   lang: fr
 type: doc
-status: "DRAFT: to be revised"
 ---
 
 # `ADV` + **de** + `NOUN`
 
-In order to analyse these expression : 
+In order to analyse these expressions: 
 - **(*un*) peu de** + `NOUN`
 - **beaucoup de** + `NOUN`
 - **plein de** + `NOUN`
 - **nombre de** + `NOUN`
-<br><br>
-We use the features `Idiom` and `ExtPos` to consider the initial `ADV` as a `PRON` in theses expressions. So we have the following annotation :
 
+We use the feature `ExtPos` to consider the `ADV` as a `PRON` in theses expressions.
+In case of *un peu de*, we also add `Idiom` and `InIdiom` features on *un peu*.
 
-> pattern { N1 [upos=ADV]; N2 [form="de"]; N3 [upos=NOUN] ;N1 < N2 ; N2<N3}
-
-
+Note that the preposition *de* in not considered as a part of fixed expression, mainly because it can be separated in coordination: for instance in *un peu de poivre et de sel* (en: *some pepper and salt*).
 #### **un peu de**
 
 <conll>
@@ -35,9 +32,9 @@ We use the features `Idiom` and `ExtPos` to consider the initial `ADV` as a `PRO
 8	sont	être	AUX	_	Mood=Ind|Number=Plur|Person=3|Tense=Pres|VerbForm=Fin	3	comp	_	_
 9	exquises	exquis	ADJ	_	Gender=Fem|Number=Plur	8	comp:pred	_	_
 10	avec	avec	ADP	_	_	8	mod	_	_
-11	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	InIdiom=Yes
-12	peu	peu	ADV	_	ExtPos=PRON	10	comp	_	Idiom=Yes
-13	de	de	ADP	_	_	12	comp:obl	_	_
+11	un	un	DET	_	Definite=Ind|Gender=Masc|Number=Sing|PronType=Art	12	det	_	InIdiom=Yes|highlight=red
+12	peu	peu	ADV	_	ExtPos=PRON	10	comp	_	Idiom=Yes|highlight=red
+13	de	de	ADP	_	_	12	comp:obl	_	highlight=red
 14	sauce	sauce	NOUN	_	Gender=Fem|Number=Sing	13	comp	_	_
 15	!	!	PUNCT	_	_	2	punct	_	_
 </conll>
@@ -45,18 +42,23 @@ We use the features `Idiom` and `ExtPos` to consider the initial `ADV` as a `PRO
 #### **beaucoup de**
 
 <conll>
-# text = Il a la particularité de marquer beaucoup de la tête.
-1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	subj	_	_
-2	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
-4	particularité	particularité	NOUN	_	Gender=Fem|Number=Sing	2	comp:obj	_	_
-5	de	de	ADP	_	_	4	udep	_	_
-6	marquer	marquer	VERB	_	VerbForm=Inf	5	comp:obj	_	Subject=SubjRaising
-7	beaucoup	beaucoup	ADV	_	_	6	mod	_	_
-8	de	de	ADP	_	_	6	mod	_	_
-9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
-10	tête	tête	NOUN	_	Gender=Fem|Number=Sing	8	comp:obj	_	SpaceAfter=No
-11	.	.	PUNCT	_	_	2	punct	_	_
+# sent_id = fr-ud-train_01183
+# text = Véritable projet multimédia, le concept demande beaucoup de moyens techniques et de flexibilité.
+1	Véritable	véritable	ADJ	_	Number=Sing	2	mod	_	Gender[ctxt]=Masc|wordform=véritable
+2	projet	projet	NOUN	_	Number=Sing	7	mod	_	Gender[lex]=Masc
+3	multimédia	multimédia	ADJ	_	Number=Sing	2	mod	_	Gender[ctxt]=Masc|SpaceAfter=No
+4	,	,	PUNCT	_	_	2	punct	_	_
+5	le	le	DET	_	Definite=Def|Gender=Masc|Number=Sing|PronType=Art	6	det	_	_
+6	concept	concept	NOUN	_	Number=Sing	7	subj	_	Gender[lex]=Masc
+7	demande	demander	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+8	beaucoup	beaucoup	ADV	_	ExtPos=PRON	7	comp:obj	_	highlight=red
+9	de	de	ADP	_	_	8	comp:obl	_	highlight=red
+10	moyens	moyen	NOUN	_	Number=Plur	9	comp	_	Gender[lex]=Masc
+11	techniques	technique	ADJ	_	Number=Plur	10	mod	_	Gender[ctxt]=Masc
+12	et	et	CCONJ	_	_	13	cc	_	_
+13	de	de	ADP	_	_	9	conj:coord	_	_
+14	flexibilité	flexibilité	NOUN	_	Number=Sing|Shared=No	13	comp	_	Gender[lex]=Fem|SpaceAfter=No
+15	.	.	PUNCT	_	_	7	punct	_	_
 </conll>
 
 #### **plein de**
@@ -69,8 +71,8 @@ We use the features `Idiom` and `ExtPos` to consider the initial `ADV` as a `PRO
 4	on	on	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Ind	6	subj	_	_
 5	y	y	PRON	_	Person=3|PronType=Prs	6	mod	_	_
 6	trouve	trouver	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
-7	plein	plein	ADV	_	ExtPos=PRON	6	comp:obj	_	_
-8	de	de	ADP	_	_	7	comp:obl	_	_
+7	plein	plein	ADV	_	ExtPos=PRON	6	comp:obj	_	highlight=red
+8	de	de	ADP	_	_	7	comp:obl	_	highlight=red
 9	marques	marque	NOUN	_	Gender=Fem|Number=Plur	8	comp	_	SpaceAfter=No
 10	.	.	PUNCT	_	_	6	punct	_	_
 </conll>
@@ -79,8 +81,8 @@ We use the features `Idiom` and `ExtPos` to consider the initial `ADV` as a `PRO
 
 <conll>
 # text = Nombre d'investisseurs qui, auparavant, voyaient d'un mauvais œil l'accumulation de liquidités par les entreprises reconnaissent maintenant les avantages de la constitution de réserves de liquidités importantes.
-1	Nombre	nombre	ADV	_	ExtPos=PRON	20	subj	_	_
-2	d'	de	ADP	_	_	1	comp:obl	_	SpaceAfter=No
+1	Nombre	nombre	ADV	_	ExtPos=PRON	20	subj	_	highlight=red
+2	d'	de	ADP	_	_	1	comp:obl	_	SpaceAfter=No|highlight=red
 3	investisseurs	investisseur	NOUN	_	Gender=Masc|Number=Plur	2	comp	_	_
 4	qui	qui	PRON	_	PronType=Rel	8	subj	_	SpaceAfter=No
 5	,	,	PUNCT	_	_	4	punct	_	_
@@ -113,3 +115,22 @@ We use the features `Idiom` and `ExtPos` to consider the initial `ADV` as a `PRO
 32	.	.	PUNCT	_	_	20	punct	_	_
 </conll>
 
+## Ambiguity
+
+Note that the same pattern can appear with a different annotation:
+In the sentence above *beaucoup* is a regular `ADV` modifying the verb *marquer*.
+
+<conll>
+# text = Il a la particularité de marquer beaucoup de la tête.
+1	Il	il	PRON	_	Gender=Masc|Number=Sing|Person=3|PronType=Prs	2	subj	_	_
+2	a	avoir	VERB	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	0	root	_	_
+3	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	4	det	_	_
+4	particularité	particularité	NOUN	_	Gender=Fem|Number=Sing	2	comp:obj	_	_
+5	de	de	ADP	_	_	4	udep	_	_
+6	marquer	marquer	VERB	_	VerbForm=Inf	5	comp:obj	_	Subject=SubjRaising
+7	beaucoup	beaucoup	ADV	_	_	6	mod	_	highlight=red
+8	de	de	ADP	_	_	6	mod	_	_
+9	la	le	DET	_	Definite=Def|Gender=Fem|Number=Sing|PronType=Art	10	det	_	_
+10	tête	tête	NOUN	_	Gender=Fem|Number=Sing	8	comp:obj	_	SpaceAfter=No
+11	.	.	PUNCT	_	_	2	punct	_	_
+</conll>
